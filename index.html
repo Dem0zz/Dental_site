@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -12,15 +11,22 @@
 <title>د. أحمد مصطفى | مركز طب وتجميل الأسنان — طنطا</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
 <script>
 tailwind.config = {
   theme: {
     extend: {
       colors: {
-        ink:"#0b1220", navy:"#101b32", cyan:"#19c6d9", aqua:"#5eead4",
-        mist:"#eefbfd", gold:"#d6b36a"
+        ink:"#0b1220",
+        navy:"#101b32",
+        cyan:"#19c6d9",
+        aqua:"#5eead4",
+        mist:"#eefbfd",
+        gold:"#d6b36a"
       },
-      fontFamily:{ cairo:["Cairo","sans-serif"] },
+      fontFamily:{
+        cairo:["Cairo","sans-serif"]
+      },
       boxShadow:{
         luxe:"0 25px 80px rgba(8,18,35,.14)",
         glow:"0 15px 50px rgba(25,198,217,.24)"
@@ -32,17 +38,34 @@ tailwind.config = {
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
+
 :root{
-  --ink:#0b1f33;--navy:#12304a;--cyan:#0ea5a5;--aqua:#5eead4;
-  --mist:#effcfb;--gold:#c9a86a;--muted:#5b7083;
+  --ink:#0b1220;
+  --navy:#101b32;
+  --cyan:#19c6d9;
+  --aqua:#5eead4;
+  --mist:#eefbfd;
+  --gold:#d6b36a;
+  --muted:#64748b;
 }
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
 
 body{
   font-family:"Cairo",sans-serif;
@@ -51,19 +74,27 @@ body{
   overflow-x:hidden
 }
 
-h1,h2,h3,h4{color:var(--ink);}
-strong,b{color:var(--ink);}
+::selection{
+  background:var(--cyan);
+  color:#fff
+}
 
-.text-slate-600{color:#506579!important}
-.text-slate-500{color:#64798b!important}
-.text-slate-400{color:#94a6b5!important}
+::-webkit-scrollbar{
+  width:9px
+}
 
-::selection{background:var(--cyan);color:#fff}
+::-webkit-scrollbar-track{
+  background:#e2e8f0
+}
 
-::-webkit-scrollbar{width:9px}
-::-webkit-scrollbar-track{background:#e2e8f0}
-::-webkit-scrollbar-thumb{background:#94a3b8;border-radius:99px}
-::-webkit-scrollbar-thumb:hover{background:#64748b}
+::-webkit-scrollbar-thumb{
+  background:#94a3b8;
+  border-radius:99px
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#64748b
+}
 
 .progress{
   position:fixed;
@@ -109,8 +140,13 @@ strong,b{color:var(--ink);}
 }
 
 @keyframes float{
-  0%,100%{transform:translate3d(0,0,0)}
-  50%{transform:translate3d(0,-18px,0)}
+  0%,100%{
+    transform:translate3d(0,0,0)
+  }
+
+  50%{
+    transform:translate3d(0,-18px,0)
+  }
 }
 
 .reveal{
@@ -124,12 +160,23 @@ strong,b{color:var(--ink);}
   transform:none
 }
 
-.reveal-delay-1{transition-delay:.1s}
-.reveal-delay-2{transition-delay:.2s}
-.reveal-delay-3{transition-delay:.3s}
+.reveal-delay-1{
+  transition-delay:.1s
+}
+
+.reveal-delay-2{
+  transition-delay:.2s
+}
+
+.reveal-delay-3{
+  transition-delay:.3s
+}
 
 .card-lift{
-  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease
 }
 
 .card-lift:hover{
@@ -139,23 +186,42 @@ strong,b{color:var(--ink);}
 }
 
 .btn{
-  transition:transform .25s ease,box-shadow .25s ease,background .25s ease
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease
 }
 
-.btn:hover{transform:translateY(-2px)}
+.btn:hover{
+  transform:translateY(-2px)
+}
 
-.marquee{animation:marquee 24s linear infinite}
+.marquee{
+  animation:marquee 24s linear infinite
+}
 
 @keyframes marquee{
-  to{transform:translateX(50%)}
+  to{
+    transform:translateX(50%)
+  }
 }
 
-.pulse-ring{animation:ring 2.2s infinite}
+.pulse-ring{
+  animation:ring 2.2s infinite
+}
 
 @keyframes ring{
-  0%{box-shadow:0 0 0 0 rgba(25,198,217,.35)}
-  70%{box-shadow:0 0 0 16px rgba(25,198,217,0)}
-  100%{box-shadow:0 0 0 0 rgba(25,198,217,0)}
+  0%{
+    box-shadow:0 0 0 0 rgba(25,198,217,.35)
+  }
+
+  70%{
+    box-shadow:0 0 0 16px rgba(25,198,217,0)
+  }
+
+  100%{
+    box-shadow:0 0 0 0 rgba(25,198,217,0)
+  }
 }
 
 details summary{
@@ -163,7 +229,9 @@ details summary{
   cursor:pointer
 }
 
-details summary::-webkit-details-marker{display:none}
+details summary::-webkit-details-marker{
+  display:none
+}
 
 details[open] .faq-icon{
   transform:rotate(45deg)
@@ -198,14 +266,23 @@ details[open] .faq-icon{
   transition:.35s
 }
 
-.toast.active{transform:none}
+.toast.active{
+  transform:none
+}
 
 @media(max-width:768px){
-  .hero-grid{background-size:30px 30px}
+
+  .hero-grid{
+    background-size:30px 30px
+  }
+
 }
 
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{
+
+  *,
+  *::before,
+  *::after{
     scroll-behavior:auto!important;
     animation:none!important;
     transition:none!important
@@ -215,7 +292,9 @@ details[open] .faq-icon{
     opacity:1;
     transform:none
   }
+
 }
+
 </style>
 </head>
 
@@ -223,54 +302,79 @@ details[open] .faq-icon{
 
 <div class="progress" id="progress"></div>
 
+
 <!-- NAVBAR -->
-<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+
+<header
+  id="navbar"
+  class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="h-[78px] flex items-center justify-between">
 
-      <a href="#home" class="flex items-center gap-3 group">
+      <a
+        href="#home"
+        class="flex items-center gap-3 group">
 
-        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan to-cyan/70 text-white grid place-items-center shadow-glow group-hover:rotate-3 transition">
+        <div
+          class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan to-cyan/70 text-white grid place-items-center shadow-glow group-hover:rotate-3 transition">
+
           <i class="fa-solid fa-tooth text-xl"></i>
+
         </div>
 
         <div>
+
           <div class="font-black text-slate-900 leading-none">
             د. أحمد مصطفى
           </div>
 
-          <div class="text-[11px] text-teal-700 font-bold mt-1">
+          <div class="text-[11px] text-cyan-700 font-bold mt-1">
             طب وتجميل الأسنان
           </div>
+
         </div>
 
       </a>
 
 
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-bold text-slate-600">
+      <nav
+        class="hidden lg:flex items-center gap-7 text-sm font-bold text-slate-600">
 
-        <a href="#about" class="nav-link hover:text-cyan transition">
+        <a
+          href="#about"
+          class="nav-link hover:text-cyan transition">
           عن المركز
         </a>
 
-        <a href="#services" class="nav-link hover:text-cyan transition">
+        <a
+          href="#services"
+          class="nav-link hover:text-cyan transition">
           الخدمات
         </a>
 
-        <a href="#results" class="nav-link hover:text-cyan transition">
+        <a
+          href="#results"
+          class="nav-link hover:text-cyan transition">
           النتائج
         </a>
 
-        <a href="#journey" class="nav-link hover:text-cyan transition">
+        <a
+          href="#journey"
+          class="nav-link hover:text-cyan transition">
           رحلة المريض
         </a>
 
-        <a href="#faq" class="nav-link hover:text-cyan transition">
+        <a
+          href="#faq"
+          class="nav-link hover:text-cyan transition">
           الأسئلة
         </a>
 
-        <a href="#contact" class="nav-link hover:text-cyan transition">
+        <a
+          href="#contact"
+          class="nav-link hover:text-cyan transition">
           التواصل
         </a>
 
@@ -279,25 +383,29 @@ details[open] .faq-icon{
 
       <div class="flex items-center gap-2">
 
-        <a href="tel:01229505700"
-           class="hidden sm:flex btn items-center gap-2 px-4 py-2.5 rounded-full text-sm font-extrabold text-slate-700 bg-white/70 border border-slate-200">
+        <a
+          href="tel:01229505700"
+          class="hidden sm:flex btn items-center gap-2 px-4 py-2.5 rounded-full text-sm font-extrabold text-slate-700 bg-white/70 border border-slate-200">
 
           <i class="fa-solid fa-phone text-cyan"></i>
+
           01229505700
 
         </a>
 
 
-        <a href="#booking"
-           class="btn hidden sm:inline-flex bg-ink text-white px-5 py-2.5 rounded-full text-sm font-extrabold shadow-lg">
+        <a
+          href="#booking"
+          class="btn hidden sm:inline-flex bg-ink text-white px-5 py-2.5 rounded-full text-sm font-extrabold shadow-lg">
 
           احجز الآن
 
         </a>
 
 
-        <button id="menuBtn"
-                class="lg:hidden w-11 h-11 rounded-xl bg-white/80 border border-slate-200 text-slate-800">
+        <button
+          id="menuBtn"
+          class="lg:hidden w-11 h-11 rounded-xl bg-white/80 border border-slate-200 text-slate-800">
 
           <i class="fa-solid fa-bars"></i>
 
@@ -308,93 +416,129 @@ details[open] .faq-icon{
     </div>
 
 
-    <div id="mobileMenu"
-         class="hidden lg:hidden glass rounded-2xl p-3 mb-3 shadow-xl">
+    <div
+      id="mobileMenu"
+      class="hidden lg:hidden glass rounded-2xl p-3 mb-3 shadow-xl">
 
-      <a href="#about" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+      <a
+        href="#about"
+        class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
         عن المركز
       </a>
 
-      <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+      <a
+        href="#services"
+        class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
         الخدمات
       </a>
 
-      <a href="#results" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+      <a
+        href="#results"
+        class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
         النتائج
       </a>
 
-      <a href="#journey" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+      <a
+        href="#journey"
+        class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
         رحلة المريض
       </a>
 
-      <a href="#faq" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+      <a
+        href="#faq"
+        class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
         الأسئلة
       </a>
 
-      <a href="#contact" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+      <a
+        href="#contact"
+        class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
         التواصل
       </a>
 
-      <a href="#booking"
-         class="block text-center mt-2 bg-ink text-white px-4 py-3 rounded-xl font-extrabold">
+      <a
+        href="#booking"
+        class="block text-center mt-2 bg-ink text-white px-4 py-3 rounded-xl font-extrabold">
+
         احجز موعدك
+
       </a>
 
     </div>
 
   </div>
+
 </header>
 
 
 <!-- HERO -->
+
 <main id="home">
 
-<section class="relative min-h-screen pt-28 pb-16 overflow-hidden bg-white hero-grid noise">
+<section
+  class="relative min-h-screen pt-28 pb-16 overflow-hidden bg-white hero-grid noise">
 
-  <div class="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-cyan/20 hero-orb"></div>
+  <div
+    class="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-cyan/20 hero-orb">
+  </div>
 
-  <div class="absolute bottom-0 -left-32 w-[360px] h-[360px] rounded-full bg-aqua/20 hero-orb"
-       style="animation-delay:2s"></div>
+  <div
+    class="absolute bottom-0 -left-32 w-[360px] h-[360px] rounded-full bg-aqua/20 hero-orb"
+    style="animation-delay:2s">
+  </div>
 
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-    <div class="grid lg:grid-cols-[1.02fr_.98fr] gap-12 items-center min-h-[calc(100vh-120px)]">
+    <div
+      class="grid lg:grid-cols-[1.02fr_.98fr] gap-12 items-center min-h-[calc(100vh-120px)]">
 
 
-      <div class="text-center lg:text-right reveal">
+      <div
+        class="text-center lg:text-right reveal">
 
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan/10 text-teal-800 border border-cyan/15 font-extrabold text-xs mb-6">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan/10 text-cyan-800 border border-cyan/15 font-extrabold text-xs mb-6">
 
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span
+            class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse">
+          </span>
 
           مركز متخصص في طب وتجميل الأسنان
 
         </div>
 
 
-        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-[1.15] text-ink">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-[1.15] text-ink">
 
           ابتسامتك ليست
 
-          <span class="block text-transparent bg-clip-text bg-gradient-to-l from-teal-600 to-cyan-500">
+          <span
+            class="block text-transparent bg-clip-text bg-gradient-to-l from-cyan-600 to-teal-500">
+
             تفصيلاً صغيراً.
+
           </span>
 
         </h1>
 
 
-        <p class="max-w-2xl mx-auto lg:mx-0 mt-6 text-slate-600 text-base sm:text-lg leading-8">
+        <p
+          class="max-w-2xl mx-auto lg:mx-0 mt-6 text-slate-600 text-base sm:text-lg leading-8">
 
           تجربة أسنان أكثر راحة واهتماماً، تجمع بين الرعاية المتخصصة والتقنيات الحديثة وخطة علاج مصممة خصيصاً لك.
 
         </p>
 
 
-        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mt-8">
+        <div
+          class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mt-8">
 
-          <a href="#booking"
-             class="btn bg-ink text-white px-7 py-4 rounded-2xl font-extrabold shadow-xl flex items-center justify-center gap-3">
+          <a
+            href="#booking"
+            class="btn bg-ink text-white px-7 py-4 rounded-2xl font-extrabold shadow-xl flex items-center justify-center gap-3">
 
             احجز موعدك
 
@@ -403,8 +547,9 @@ details[open] .faq-icon{
           </a>
 
 
-          <a href="tel:01229505700"
-             class="btn bg-white border border-slate-200 px-7 py-4 rounded-2xl font-extrabold flex items-center justify-center gap-3">
+          <a
+            href="tel:01229505700"
+            class="btn bg-white border border-slate-200 px-7 py-4 rounded-2xl font-extrabold flex items-center justify-center gap-3">
 
             <i class="fa-solid fa-phone text-cyan"></i>
 
@@ -415,12 +560,15 @@ details[open] .faq-icon{
         </div>
 
 
-        <div class="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0 mt-10">
+        <div
+          class="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0 mt-10">
 
           <div class="text-center lg:text-right">
 
             <div class="text-2xl font-black text-ink">
+
               4.9<span class="text-cyan">/5</span>
+
             </div>
 
             <div class="text-xs text-slate-500 mt-1">
@@ -430,7 +578,8 @@ details[open] .faq-icon{
           </div>
 
 
-          <div class="text-center lg:text-right border-x border-slate-200">
+          <div
+            class="text-center lg:text-right border-x border-slate-200">
 
             <div class="text-2xl font-black text-ink">
               10+
@@ -462,10 +611,13 @@ details[open] .faq-icon{
 
       <div class="relative reveal reveal-delay-2">
 
-        <div class="absolute -inset-5 rounded-[3rem] bg-gradient-to-br from-cyan/25 to-aqua/10 blur-2xl"></div>
+        <div
+          class="absolute -inset-5 rounded-[3rem] bg-gradient-to-br from-cyan/25 to-aqua/10 blur-2xl">
+        </div>
 
 
-        <div class="relative rounded-[2.5rem] overflow-hidden border-[10px] border-white shadow-luxe bg-slate-100">
+        <div
+          class="relative rounded-[2.5rem] overflow-hidden border-[10px] border-white shadow-luxe bg-slate-100">
 
           <img
             loading="eager"
@@ -474,11 +626,13 @@ details[open] .faq-icon{
             class="w-full h-[470px] sm:h-[590px] object-cover">
 
 
-          <div class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 shadow-xl">
+          <div
+            class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 shadow-xl">
 
             <div class="flex items-center gap-3">
 
-              <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 grid place-items-center">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 grid place-items-center">
 
                 <i class="fa-solid fa-shield-heart"></i>
 
@@ -504,11 +658,13 @@ details[open] .faq-icon{
         </div>
 
 
-        <div class="absolute -top-5 -left-4 sm:-left-8 bg-white rounded-2xl shadow-xl border border-slate-100 p-4">
+        <div
+          class="absolute -top-5 -left-4 sm:-left-8 bg-white rounded-2xl shadow-xl border border-slate-100 p-4">
 
           <div class="flex items-center gap-3">
 
-            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 grid place-items-center">
+            <div
+              class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 grid place-items-center">
 
               <i class="fa-solid fa-star"></i>
 
@@ -541,11 +697,13 @@ details[open] .faq-icon{
 
 
 <!-- TRUST BAR -->
+
 <section class="bg-ink text-white overflow-hidden">
 
   <div class="max-w-7xl mx-auto px-4 py-5">
 
-    <div class="flex flex-wrap justify-center gap-x-10 gap-y-3 text-xs sm:text-sm font-bold text-slate-300">
+    <div
+      class="flex flex-wrap justify-center gap-x-10 gap-y-3 text-xs sm:text-sm font-bold text-slate-300">
 
       <span>
         <i class="fa-solid fa-circle-check text-cyan ml-2"></i>
@@ -575,19 +733,27 @@ details[open] .faq-icon{
 
 
 <!-- ABOUT -->
-<section id="about" class="py-24 bg-slate-50">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  id="about"
+  class="py-24 bg-slate-50">
 
-    <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-14 items-center">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div
+      class="grid lg:grid-cols-[.8fr_1.2fr] gap-14 items-center">
 
       <div class="reveal">
 
         <div class="relative max-w-md mx-auto">
 
-          <div class="absolute -inset-4 rounded-[2.5rem] bg-cyan/15 rotate-3"></div>
+          <div
+            class="absolute -inset-4 rounded-[2.5rem] bg-cyan/15 rotate-3">
+          </div>
 
-          <div class="relative rounded-[2.5rem] overflow-hidden shadow-luxe bg-white p-3">
+          <div
+            class="relative rounded-[2.5rem] overflow-hidden shadow-luxe bg-white p-3">
 
             <img
               loading="lazy"
@@ -598,7 +764,8 @@ details[open] .faq-icon{
           </div>
 
 
-          <div class="absolute -bottom-7 -right-5 sm:-right-10 bg-white rounded-2xl shadow-xl border border-slate-100 p-5">
+          <div
+            class="absolute -bottom-7 -right-5 sm:-right-10 bg-white rounded-2xl shadow-xl border border-slate-100 p-5">
 
             <div class="text-xs text-slate-500">
               الاهتمام
@@ -621,17 +788,18 @@ details[open] .faq-icon{
 
       <div class="reveal reveal-delay-1">
 
-        <span class="text-teal-700 font-black text-sm">
+        <span class="text-cyan-700 font-black text-sm">
           عن المركز
         </span>
 
-        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
+        <h2
+          class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
 
           رعاية طبية بلمسة
 
           <br>
 
-          <span class="text-teal-600">
+          <span class="text-cyan-600">
             إنسانية.
           </span>
 
@@ -648,9 +816,11 @@ details[open] .faq-icon{
         <div class="grid sm:grid-cols-2 gap-4 mt-8">
 
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
+          <div
+            class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
 
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <div
+              class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
               <i class="fa-solid fa-user-doctor"></i>
 
@@ -667,9 +837,11 @@ details[open] .faq-icon{
           </div>
 
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
+          <div
+            class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
 
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <div
+              class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
               <i class="fa-solid fa-microchip"></i>
 
@@ -686,9 +858,11 @@ details[open] .faq-icon{
           </div>
 
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
+          <div
+            class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
 
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <div
+              class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
               <i class="fa-solid fa-shield-virus"></i>
 
@@ -705,9 +879,11 @@ details[open] .faq-icon{
           </div>
 
 
-          <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
+          <div
+            class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
 
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <div
+              class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
               <i class="fa-solid fa-heart"></i>
 
@@ -723,6 +899,7 @@ details[open] .faq-icon{
 
           </div>
 
+
         </div>
 
       </div>
@@ -735,13 +912,18 @@ details[open] .faq-icon{
 
 
 <!-- SERVICES -->
-<section id="services" class="py-24 bg-white">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  id="services"
+  class="py-24 bg-white">
 
-    <div class="max-w-2xl mb-12 reveal">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <span class="text-teal-700 font-black text-sm">
+    <div
+      class="max-w-2xl mb-12 reveal">
+
+      <span class="text-cyan-700 font-black text-sm">
         خدمات المركز
       </span>
 
@@ -759,7 +941,10 @@ details[open] .faq-icon{
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
 
-      <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal">
+      <!-- SERVICE 01 -->
+
+      <article
+        class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal">
 
         <div class="relative overflow-hidden rounded-2xl">
 
@@ -769,7 +954,8 @@ details[open] .faq-icon{
             alt="زراعة وتجميل الأسنان"
             class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
 
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+          <span
+            class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
             01
           </span>
 
@@ -778,7 +964,8 @@ details[open] .faq-icon{
 
         <div class="p-4">
 
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+          <div
+            class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
             <i class="fa-solid fa-tooth"></i>
 
@@ -792,8 +979,9 @@ details[open] .faq-icon{
             حلول لتعويض الأسنان وتحسين الشكل والوظيفة.
           </p>
 
-          <a href="#booking"
-             class="inline-flex items-center gap-2 text-teal-700 text-xs font-black mt-4">
+          <a
+            href="#booking"
+            class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
 
             احجز الخدمة
 
@@ -806,7 +994,10 @@ details[open] .faq-icon{
       </article>
 
 
-      <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-1">
+      <!-- SERVICE 02 -->
+
+      <article
+        class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-1">
 
         <div class="relative overflow-hidden rounded-2xl">
 
@@ -816,7 +1007,8 @@ details[open] .faq-icon{
             alt="تقويم الأسنان"
             class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
 
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+          <span
+            class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
             02
           </span>
 
@@ -825,7 +1017,8 @@ details[open] .faq-icon{
 
         <div class="p-4">
 
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+          <div
+            class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
             <i class="fa-solid fa-wand-magic-sparkles"></i>
 
@@ -839,8 +1032,9 @@ details[open] .faq-icon{
             تحسين ترتيب الأسنان للحصول على ابتسامة متناسقة.
           </p>
 
-          <a href="#booking"
-             class="inline-flex items-center gap-2 text-teal-700 text-xs font-black mt-4">
+          <a
+            href="#booking"
+            class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
 
             احجز الخدمة
 
@@ -853,18 +1047,22 @@ details[open] .faq-icon{
       </article>
 
 
-      <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-2">
+      <!-- SERVICE 03 / TEETH WHITENING -->
+
+      <article
+        class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-2">
 
         <div class="relative overflow-hidden rounded-2xl">
 
-          <!-- الصورة الجديدة الخاصة بتبييض الأسنان -->
+          <!-- صورة فعلية لجلسة تبييض أسنان -->
           <img
             loading="lazy"
-            src="https://images.pexels.com/photos/3845749/pexels-photo-3845749.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="جلسة تبييض الأسنان"
+            src="https://images.pexels.com/photos/5622271/pexels-photo-5622271.jpeg?cs=srgb&dl=pexels-gustavo-fring-5622271.jpg&fm=jpg"
+            alt="طبيب أسنان يقوم بتبييض أسنان مريض"
             class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
 
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+          <span
+            class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
             03
           </span>
 
@@ -873,7 +1071,8 @@ details[open] .faq-icon{
 
         <div class="p-4">
 
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+          <div
+            class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
             <i class="fa-solid fa-sparkles"></i>
 
@@ -887,8 +1086,9 @@ details[open] .faq-icon{
             ابتسامة أكثر إشراقاً مع تقييم مناسب لحالتك.
           </p>
 
-          <a href="#booking"
-             class="inline-flex items-center gap-2 text-teal-700 text-xs font-black mt-4">
+          <a
+            href="#booking"
+            class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
 
             احجز الخدمة
 
@@ -901,7 +1101,10 @@ details[open] .faq-icon{
       </article>
 
 
-      <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-3">
+      <!-- SERVICE 04 -->
+
+      <article
+        class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-3">
 
         <div class="relative overflow-hidden rounded-2xl">
 
@@ -911,7 +1114,8 @@ details[open] .faq-icon{
             alt="علاج الجذور والأعصاب"
             class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
 
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+          <span
+            class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
             04
           </span>
 
@@ -920,7 +1124,8 @@ details[open] .faq-icon{
 
         <div class="p-4">
 
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+          <div
+            class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
 
             <i class="fa-solid fa-microscope"></i>
 
@@ -934,8 +1139,9 @@ details[open] .faq-icon{
             تشخيص وعلاج مشاكل الجذور والقنوات العصبية.
           </p>
 
-          <a href="#booking"
-             class="inline-flex items-center gap-2 text-teal-700 text-xs font-black mt-4">
+          <a
+            href="#booking"
+            class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
 
             احجز الخدمة
 
@@ -955,11 +1161,16 @@ details[open] .faq-icon{
 
 
 <!-- DARK STATEMENT -->
-<section class="py-24 bg-ink text-white relative overflow-hidden noise">
 
-  <div class="absolute w-96 h-96 rounded-full bg-cyan/10 blur-3xl -top-32 -left-20"></div>
+<section
+  class="py-24 bg-ink text-white relative overflow-hidden noise">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+  <div
+    class="absolute w-96 h-96 rounded-full bg-cyan/10 blur-3xl -top-32 -left-20">
+  </div>
+
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
     <div class="grid md:grid-cols-3 gap-8 items-center">
 
@@ -969,7 +1180,8 @@ details[open] .faq-icon{
           فلسفتنا
         </span>
 
-        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
+        <h2
+          class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
 
           طب الأسنان لا يبدأ من الكرسي.
 
@@ -981,7 +1193,8 @@ details[open] .faq-icon{
 
         </h2>
 
-        <p class="text-slate-400 leading-8 mt-5 max-w-2xl">
+        <p
+          class="text-slate-400 leading-8 mt-5 max-w-2xl">
 
           نشرح لك ما تحتاجه، لماذا تحتاجه، وما الخيارات المتاحة أمامك — لأن المريض الواعي شريك أساسي في نجاح العلاج.
 
@@ -990,10 +1203,12 @@ details[open] .faq-icon{
       </div>
 
 
-      <div class="reveal reveal-delay-2 flex md:justify-end">
+      <div
+        class="reveal reveal-delay-2 flex md:justify-end">
 
-        <a href="#booking"
-           class="btn inline-flex items-center gap-3 bg-white text-ink px-7 py-4 rounded-2xl font-black shadow-xl">
+        <a
+          href="#booking"
+          class="btn inline-flex items-center gap-3 bg-white text-ink px-7 py-4 rounded-2xl font-black shadow-xl">
 
           ابدأ رحلتك
 
@@ -1011,15 +1226,20 @@ details[open] .faq-icon{
 
 
 <!-- RESULTS / GALLERY -->
-<section id="results" class="py-24 bg-slate-50">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  id="results"
+  class="py-24 bg-slate-50">
 
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-12 reveal">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div
+      class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-12 reveal">
 
       <div>
 
-        <span class="text-teal-700 font-black text-sm">
+        <span class="text-cyan-700 font-black text-sm">
           معرض توضيحي
         </span>
 
@@ -1029,8 +1249,8 @@ details[open] .faq-icon{
 
       </div>
 
-
-      <p class="text-sm text-slate-500 max-w-md leading-7">
+      <p
+        class="text-sm text-slate-500 max-w-md leading-7">
 
         صور توضيحية للخدمات والمجال الطبي. النتائج الفعلية تختلف حسب كل حالة ويتم تقييمها بشكل فردي.
 
@@ -1049,10 +1269,11 @@ details[open] .faq-icon{
         <img
           loading="lazy"
           src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1000"
-          alt="صورة توضيحية لطب الأسنان"
+          alt="صورة توضيحية"
           class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
 
-        <span class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 font-black">
+        <span
+          class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 font-black">
 
           ابتسامة أكثر تناسقاً
 
@@ -1076,8 +1297,11 @@ details[open] .faq-icon{
             alt="زراعة وتجميل الأسنان"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
 
-          <span class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">
+          <span
+            class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">
+
             زراعة وتجميل
+
           </span>
 
         </button>
@@ -1090,11 +1314,14 @@ details[open] .faq-icon{
           <img
             loading="lazy"
             src="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="رعاية وعلاج الأسنان"
+            alt="علاج الأسنان"
             class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
 
-          <span class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">
+          <span
+            class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">
+
             رعاية متقدمة
+
           </span>
 
         </button>
@@ -1109,13 +1336,18 @@ details[open] .faq-icon{
 
 
 <!-- JOURNEY -->
-<section id="journey" class="py-24 bg-white">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  id="journey"
+  class="py-24 bg-white">
 
-    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <span class="text-teal-700 font-black text-sm">
+    <div
+      class="text-center max-w-2xl mx-auto mb-14 reveal">
+
+      <span class="text-cyan-700 font-black text-sm">
         رحلة المريض
       </span>
 
@@ -1130,13 +1362,17 @@ details[open] .faq-icon{
 
 
       <!-- 01 -->
-      <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal">
 
-        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+      <div
+        class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal">
+
+        <span
+          class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
           01
         </span>
 
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+        <div
+          class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
 
           <i class="fa-solid fa-calendar-check"></i>
 
@@ -1154,13 +1390,17 @@ details[open] .faq-icon{
 
 
       <!-- 02 -->
-      <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-1">
 
-        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+      <div
+        class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-1">
+
+        <span
+          class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
           02
         </span>
 
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+        <div
+          class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
 
           <i class="fa-solid fa-comments"></i>
 
@@ -1178,13 +1418,17 @@ details[open] .faq-icon{
 
 
       <!-- 03 -->
-      <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-2">
 
-        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+      <div
+        class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-2">
+
+        <span
+          class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
           03
         </span>
 
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+        <div
+          class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
 
           <i class="fa-solid fa-clipboard-list"></i>
 
@@ -1202,13 +1446,17 @@ details[open] .faq-icon{
 
 
       <!-- 04 -->
-      <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-3">
 
-        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+      <div
+        class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-3">
+
+        <span
+          class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
           04
         </span>
 
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+        <div
+          class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
 
           <i class="fa-solid fa-face-smile-beam"></i>
 
@@ -1233,19 +1481,23 @@ details[open] .faq-icon{
 
 
 <!-- WHY -->
+
 <section class="py-24 bg-cyan-50">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="grid lg:grid-cols-2 gap-12 items-center">
 
+
       <div class="reveal">
 
-        <span class="text-teal-700 font-black text-sm">
+        <span class="text-cyan-700 font-black text-sm">
           لماذا نحن؟
         </span>
 
-        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
+        <h2
+          class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
 
           كل زيارة لها
 
@@ -1264,7 +1516,8 @@ details[open] .faq-icon{
       </div>
 
 
-      <div class="grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
+      <div
+        class="grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
 
 
         <div class="bg-white p-6 rounded-3xl shadow-sm">
@@ -1337,13 +1590,16 @@ details[open] .faq-icon{
 
 
 <!-- TESTIMONIALS -->
+
 <section class="py-24 bg-white">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+    <div
+      class="text-center max-w-2xl mx-auto mb-12 reveal">
 
-      <span class="text-teal-700 font-black text-sm">
+      <span class="text-cyan-700 font-black text-sm">
         آراء المرضى
       </span>
 
@@ -1357,7 +1613,8 @@ details[open] .faq-icon{
     <div class="grid md:grid-cols-3 gap-5">
 
 
-      <blockquote class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal">
+      <blockquote
+        class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal">
 
         <div class="text-amber-400 text-sm">
           ★★★★★
@@ -1371,7 +1628,8 @@ details[open] .faq-icon{
 
         <footer class="flex items-center gap-3 mt-7">
 
-          <div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
+          <div
+            class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
             م
           </div>
 
@@ -1392,7 +1650,8 @@ details[open] .faq-icon{
       </blockquote>
 
 
-      <blockquote class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal reveal-delay-1">
+      <blockquote
+        class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal reveal-delay-1">
 
         <div class="text-amber-400 text-sm">
           ★★★★★
@@ -1406,7 +1665,8 @@ details[open] .faq-icon{
 
         <footer class="flex items-center gap-3 mt-7">
 
-          <div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
+          <div
+            class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
             س
           </div>
 
@@ -1427,7 +1687,8 @@ details[open] .faq-icon{
       </blockquote>
 
 
-      <blockquote class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal reveal-delay-2">
+      <blockquote
+        class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal reveal-delay-2">
 
         <div class="text-amber-400 text-sm">
           ★★★★★
@@ -1441,7 +1702,8 @@ details[open] .faq-icon{
 
         <footer class="flex items-center gap-3 mt-7">
 
-          <div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
+          <div
+            class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
             خ
           </div>
 
@@ -1470,13 +1732,18 @@ details[open] .faq-icon{
 
 
 <!-- FAQ -->
-<section id="faq" class="py-24 bg-slate-50">
 
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  id="faq"
+  class="py-24 bg-slate-50">
 
-    <div class="text-center mb-12 reveal">
+  <div
+    class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <span class="text-teal-700 font-black text-sm">
+    <div
+      class="text-center mb-12 reveal">
+
+      <span class="text-cyan-700 font-black text-sm">
         الأسئلة الشائعة
       </span>
 
@@ -1490,15 +1757,19 @@ details[open] .faq-icon{
     <div class="space-y-3">
 
 
-      <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal" open>
+      <details
+        class="bg-white rounded-2xl border border-slate-100 p-5 reveal"
+        open>
 
-        <summary class="flex items-center justify-between gap-4 font-black">
+        <summary
+          class="flex items-center justify-between gap-4 font-black">
 
           <span>
             كيف أحجز موعداً؟
           </span>
 
-          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+          <span
+            class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
 
             <i class="fa-solid fa-plus text-xs"></i>
 
@@ -1506,7 +1777,8 @@ details[open] .faq-icon{
 
         </summary>
 
-        <p class="text-sm text-slate-500 leading-7 mt-4">
+        <p
+          class="text-sm text-slate-500 leading-7 mt-4">
 
           املأ نموذج الحجز أسفل الصفحة، وسيتم تجهيز رسالة واتساب ببيانات الحجز لتأكيد الموعد.
 
@@ -1515,15 +1787,18 @@ details[open] .faq-icon{
       </details>
 
 
-      <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
+      <details
+        class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
 
-        <summary class="flex items-center justify-between gap-4 font-black">
+        <summary
+          class="flex items-center justify-between gap-4 font-black">
 
           <span>
             هل يمكن اختيار الخدمة قبل الزيارة؟
           </span>
 
-          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+          <span
+            class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
 
             <i class="fa-solid fa-plus text-xs"></i>
 
@@ -1531,7 +1806,8 @@ details[open] .faq-icon{
 
         </summary>
 
-        <p class="text-sm text-slate-500 leading-7 mt-4">
+        <p
+          class="text-sm text-slate-500 leading-7 mt-4">
 
           نعم، يمكنك اختيار الخدمة الأقرب لاحتياجك، وسيتم تقييم الحالة بشكل مناسب أثناء الزيارة.
 
@@ -1540,15 +1816,18 @@ details[open] .faq-icon{
       </details>
 
 
-      <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
+      <details
+        class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
 
-        <summary class="flex items-center justify-between gap-4 font-black">
+        <summary
+          class="flex items-center justify-between gap-4 font-black">
 
           <span>
             ما مواعيد العمل؟
           </span>
 
-          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+          <span
+            class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
 
             <i class="fa-solid fa-plus text-xs"></i>
 
@@ -1556,7 +1835,8 @@ details[open] .faq-icon{
 
         </summary>
 
-        <p class="text-sm text-slate-500 leading-7 mt-4">
+        <p
+          class="text-sm text-slate-500 leading-7 mt-4">
 
           السبت إلى الخميس من 4:00 مساءً حتى 10:00 مساءً. الجمعة إجازة أسبوعية.
 
@@ -1565,15 +1845,18 @@ details[open] .faq-icon{
       </details>
 
 
-      <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
+      <details
+        class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
 
-        <summary class="flex items-center justify-between gap-4 font-black">
+        <summary
+          class="flex items-center justify-between gap-4 font-black">
 
           <span>
             أين يقع المركز؟
           </span>
 
-          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+          <span
+            class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
 
             <i class="fa-solid fa-plus text-xs"></i>
 
@@ -1581,7 +1864,8 @@ details[open] .faq-icon{
 
         </summary>
 
-        <p class="text-sm text-slate-500 leading-7 mt-4">
+        <p
+          class="text-sm text-slate-500 leading-7 mt-4">
 
           طنطا — شارع البحر — برج الأطباء — الدور الثالث.
 
@@ -1598,16 +1882,25 @@ details[open] .faq-icon{
 
 
 <!-- BOOKING -->
-<section id="booking" class="py-24 bg-ink text-white relative overflow-hidden noise">
 
-  <div class="absolute -right-32 -top-32 w-96 h-96 bg-cyan/15 rounded-full blur-3xl"></div>
+<section
+  id="booking"
+  class="py-24 bg-ink text-white relative overflow-hidden noise">
 
-  <div class="absolute -left-32 bottom-0 w-96 h-96 bg-aqua/10 rounded-full blur-3xl"></div>
+  <div
+    class="absolute -right-32 -top-32 w-96 h-96 bg-cyan/15 rounded-full blur-3xl">
+  </div>
+
+  <div
+    class="absolute -left-32 bottom-0 w-96 h-96 bg-aqua/10 rounded-full blur-3xl">
+  </div>
 
 
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+  <div
+    class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
-    <div class="text-center max-w-2xl mx-auto reveal">
+    <div
+      class="text-center max-w-2xl mx-auto reveal">
 
       <span class="text-cyan font-black text-sm">
         احجز موعدك
@@ -1624,8 +1917,9 @@ details[open] .faq-icon{
     </div>
 
 
-    <form id="bookingForm"
-          class="mt-12 bg-white/[.06] border border-white/10 rounded-[2rem] p-5 sm:p-8 backdrop-blur-xl reveal">
+    <form
+      id="bookingForm"
+      class="mt-12 bg-white/[.06] border border-white/10 rounded-[2rem] p-5 sm:p-8 backdrop-blur-xl reveal">
 
 
       <div class="grid md:grid-cols-2 gap-5">
@@ -1633,9 +1927,12 @@ details[open] .faq-icon{
 
         <div>
 
-          <label for="patientName"
-                 class="block text-xs font-bold text-slate-300 mb-2">
+          <label
+            for="patientName"
+            class="block text-xs font-bold text-slate-300 mb-2">
+
             الاسم بالكامل
+
           </label>
 
           <input
@@ -1651,9 +1948,12 @@ details[open] .faq-icon{
 
         <div>
 
-          <label for="patientPhone"
-                 class="block text-xs font-bold text-slate-300 mb-2">
+          <label
+            for="patientPhone"
+            class="block text-xs font-bold text-slate-300 mb-2">
+
             رقم الهاتف
+
           </label>
 
           <input
@@ -1668,9 +1968,12 @@ details[open] .faq-icon{
 
         <div>
 
-          <label for="patientService"
-                 class="block text-xs font-bold text-slate-300 mb-2">
+          <label
+            for="patientService"
+            class="block text-xs font-bold text-slate-300 mb-2">
+
             الخدمة المطلوبة
+
           </label>
 
           <select
@@ -1705,9 +2008,12 @@ details[open] .faq-icon{
 
         <div>
 
-          <label for="bookingDate"
-                 class="block text-xs font-bold text-slate-300 mb-2">
+          <label
+            for="bookingDate"
+            class="block text-xs font-bold text-slate-300 mb-2">
+
             اليوم المناسب
+
           </label>
 
           <input
@@ -1721,7 +2027,8 @@ details[open] .faq-icon{
       </div>
 
 
-      <div class="mt-6 flex items-start gap-3 text-xs text-slate-400">
+      <div
+        class="mt-6 flex items-start gap-3 text-xs text-slate-400">
 
         <i class="fa-solid fa-lock text-cyan mt-0.5"></i>
 
@@ -1750,16 +2057,21 @@ details[open] .faq-icon{
 
 
 <!-- CONTACT -->
-<section id="contact" class="py-24 bg-white">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  id="contact"
+  class="py-24 bg-white">
+
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="grid lg:grid-cols-2 gap-8">
 
 
-      <div class="bg-slate-50 rounded-[2rem] p-7 sm:p-10 reveal">
+      <div
+        class="bg-slate-50 rounded-[2rem] p-7 sm:p-10 reveal">
 
-        <span class="text-teal-700 font-black text-sm">
+        <span class="text-cyan-700 font-black text-sm">
           تواصل معنا
         </span>
 
@@ -1771,10 +2083,12 @@ details[open] .faq-icon{
         <div class="space-y-5 mt-8">
 
 
-          <a href="tel:01229505700"
-             class="flex gap-4 items-start group">
+          <a
+            href="tel:01229505700"
+            class="flex gap-4 items-start group">
 
-            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm group-hover:bg-cyan group-hover:text-white transition">
+            <span
+              class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm group-hover:bg-cyan group-hover:text-white transition">
 
               <i class="fa-solid fa-phone"></i>
 
@@ -1795,12 +2109,14 @@ details[open] .faq-icon{
           </a>
 
 
-          <a href="https://wa.me/201229505700"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="flex gap-4 items-start group">
+          <a
+            href="https://wa.me/201229505700"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex gap-4 items-start group">
 
-            <span class="w-12 h-12 rounded-xl bg-white text-emerald-500 grid place-items-center shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition">
+            <span
+              class="w-12 h-12 rounded-xl bg-white text-emerald-500 grid place-items-center shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition">
 
               <i class="fa-brands fa-whatsapp text-lg"></i>
 
@@ -1823,7 +2139,8 @@ details[open] .faq-icon{
 
           <div class="flex gap-4 items-start">
 
-            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm">
+            <span
+              class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm">
 
               <i class="fa-solid fa-location-dot"></i>
 
@@ -1846,7 +2163,8 @@ details[open] .faq-icon{
 
           <div class="flex gap-4 items-start">
 
-            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm">
+            <span
+              class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm">
 
               <i class="fa-regular fa-clock"></i>
 
@@ -1878,7 +2196,8 @@ details[open] .faq-icon{
       </div>
 
 
-      <div class="h-[420px] rounded-[2rem] overflow-hidden shadow-luxe border border-slate-100 reveal reveal-delay-1">
+      <div
+        class="h-[420px] rounded-[2rem] overflow-hidden shadow-luxe border border-slate-100 reveal reveal-delay-1">
 
         <iframe
           title="خريطة موقع العيادة"
@@ -1902,18 +2221,22 @@ details[open] .faq-icon{
 
 
 <!-- FOOTER -->
+
 <footer class="bg-ink text-slate-400 pt-14 pb-8">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+    <div
+      class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
 
 
       <div>
 
         <div class="flex items-center gap-3">
 
-          <div class="w-11 h-11 rounded-xl bg-cyan text-ink grid place-items-center">
+          <div
+            class="w-11 h-11 rounded-xl bg-cyan text-ink grid place-items-center">
 
             <i class="fa-solid fa-tooth"></i>
 
@@ -1934,7 +2257,8 @@ details[open] .faq-icon{
         </div>
 
 
-        <p class="text-xs leading-6 mt-5 max-w-sm">
+        <p
+          class="text-xs leading-6 mt-5 max-w-sm">
 
           رعاية متخصصة، تقنيات حديثة، وتجربة مريحة تبدأ من أول تواصل.
 
@@ -1951,19 +2275,27 @@ details[open] .faq-icon{
 
         <div class="grid grid-cols-2 gap-3 text-xs">
 
-          <a href="#about" class="hover:text-cyan transition">
+          <a
+            href="#about"
+            class="hover:text-cyan transition">
             عن المركز
           </a>
 
-          <a href="#services" class="hover:text-cyan transition">
+          <a
+            href="#services"
+            class="hover:text-cyan transition">
             الخدمات
           </a>
 
-          <a href="#results" class="hover:text-cyan transition">
+          <a
+            href="#results"
+            class="hover:text-cyan transition">
             المعرض
           </a>
 
-          <a href="#faq" class="hover:text-cyan transition">
+          <a
+            href="#faq"
+            class="hover:text-cyan transition">
             الأسئلة
           </a>
 
@@ -1982,8 +2314,9 @@ details[open] .faq-icon{
           احجز موعدك أو تواصل معنا مباشرة.
         </p>
 
-        <a href="#booking"
-           class="inline-flex bg-white text-ink px-5 py-3 rounded-xl text-xs font-black">
+        <a
+          href="#booking"
+          class="inline-flex bg-white text-ink px-5 py-3 rounded-xl text-xs font-black">
 
           احجز موعدك
 
@@ -1995,7 +2328,8 @@ details[open] .faq-icon{
     </div>
 
 
-    <div class="pt-7 flex flex-col sm:flex-row gap-3 justify-between text-[11px]">
+    <div
+      class="pt-7 flex flex-col sm:flex-row gap-3 justify-between text-[11px]">
 
       <span>
         © 2026 جميع الحقوق محفوظة — د. أحمد مصطفى
@@ -2013,7 +2347,9 @@ details[open] .faq-icon{
 
 
 <!-- FLOATING ACTIONS -->
-<div class="fixed bottom-5 left-5 z-50 flex flex-col gap-3">
+
+<div
+  class="fixed bottom-5 left-5 z-50 flex flex-col gap-3">
 
 
   <a
@@ -2041,8 +2377,10 @@ details[open] .faq-icon{
 
 
 <!-- GALLERY MODAL -->
-<div id="imageModal"
-     class="modal fixed inset-0 z-[100] bg-ink/90 backdrop-blur-md p-4 grid place-items-center">
+
+<div
+  id="imageModal"
+  class="modal fixed inset-0 z-[100] bg-ink/90 backdrop-blur-md p-4 grid place-items-center">
 
   <button
     id="closeModal"
@@ -2064,18 +2402,24 @@ details[open] .faq-icon{
 
 
 <!-- TOAST -->
+
 <div
   id="toast"
   class="toast fixed bottom-5 right-5 z-[110] bg-ink text-white rounded-2xl px-5 py-4 shadow-2xl border border-white/10 flex items-center gap-3 max-w-sm">
 
-  <span class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 grid place-items-center">
+  <span
+    class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 grid place-items-center">
 
     <i class="fa-solid fa-check"></i>
 
   </span>
 
-  <span id="toastText" class="text-xs font-bold">
+  <span
+    id="toastText"
+    class="text-xs font-bold">
+
     تم تجهيز الحجز.
+
   </span>
 
 </div>
@@ -2099,44 +2443,52 @@ const menuBtn = $("#menuBtn");
 const mobileMenu = $("#mobileMenu");
 
 
-window.addEventListener("scroll", () => {
+window.addEventListener(
+  "scroll",
+  () => {
 
-  navbar.classList.toggle(
-    "nav-scrolled",
-    window.scrollY > 20
-  );
+    navbar.classList.toggle(
+      "nav-scrolled",
+      window.scrollY > 20
+    );
 
-  const max =
-    document.documentElement.scrollHeight - innerHeight;
+    const max =
+      document.documentElement.scrollHeight - innerHeight;
 
-  $("#progress").style.width =
-    max > 0
-      ? `${(scrollY/max)*100}%`
-      : "0%";
+    $("#progress").style.width =
+      max > 0
+        ? `${(scrollY/max)*100}%`
+        : "0%";
 
-},{passive:true});
+  },
+  {passive:true}
+);
 
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener(
+  "click",
+  () => {
 
-  mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("hidden");
 
-  const icon =
-    menuBtn.querySelector("i");
+    const icon =
+      menuBtn.querySelector("i");
 
-  icon.className =
-    mobileMenu.classList.contains("hidden")
-      ? "fa-solid fa-bars"
-      : "fa-solid fa-xmark";
+    icon.className =
+      mobileMenu.classList.contains("hidden")
+        ? "fa-solid fa-bars"
+        : "fa-solid fa-xmark";
 
-});
+  }
+);
 
 
 $$('#mobileMenu a').forEach(
   a =>
     a.addEventListener(
       "click",
-      () => mobileMenu.classList.add("hidden")
+      () =>
+        mobileMenu.classList.add("hidden")
     )
 );
 
@@ -2147,25 +2499,30 @@ const observer =
   new IntersectionObserver(
     entries => {
 
-      entries.forEach(entry => {
+      entries.forEach(
+        entry => {
 
-        if(entry.isIntersecting){
+          if(entry.isIntersecting){
 
-          entry.target.classList.add("show");
+            entry.target.classList.add("show");
 
-          observer.unobserve(entry.target);
+            observer.unobserve(entry.target);
+
+          }
 
         }
-
-      });
+      );
 
     },
-    {threshold:.12}
+    {
+      threshold:.12
+    }
   );
 
 
 $$(".reveal").forEach(
-  el => observer.observe(el)
+  el =>
+    observer.observe(el)
 );
 
 
@@ -2178,7 +2535,11 @@ const now =
   new Date();
 
 dateInput.min =
-  `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
+  `${now.getFullYear()}-${String(
+    now.getMonth()+1
+  ).padStart(2,"0")}-${String(
+    now.getDate()
+  ).padStart(2,"0")}`;
 
 
 /* ========= WhatsApp booking ========= */
@@ -2397,23 +2758,27 @@ const navObserver =
   new IntersectionObserver(
     entries => {
 
-      entries.forEach(entry => {
+      entries.forEach(
+        entry => {
 
-        if(entry.isIntersecting){
+          if(entry.isIntersecting){
 
-          navLinks.forEach(link => {
+            navLinks.forEach(
+              link => {
 
-            link.classList.toggle(
-              "text-teal-600",
-              link.getAttribute("href") ===
-              `#${entry.target.id}`
+                link.classList.toggle(
+                  "text-cyan-600",
+                  link.getAttribute("href") ===
+                  `#${entry.target.id}`
+                );
+
+              }
             );
 
-          });
+          }
 
         }
-
-      });
+      );
 
     },
     {
@@ -2441,7 +2806,9 @@ $$("img").forEach(
           ".25";
 
       },
-      {once:true}
+      {
+        once:true
+      }
     );
 
   }
@@ -2451,4 +2818,3 @@ $$("img").forEach(
 
 </body>
 </html>
-```
