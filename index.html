@@ -8,18 +8,26 @@
 <meta property="og:title" content="د. أحمد مصطفى | لطب وتجميل الأسنان">
 <meta property="og:description" content="ابتسامتك الجميلة تبدأ من هنا. احجز موعدك الآن عبر الواتساب.">
 <meta property="og:type" content="website">
+
 <title>د. أحمد مصطفى | مركز طب وتجميل الأسنان — طنطا</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
 <script>
 tailwind.config = {
   theme: {
     extend: {
       colors: {
-        ink:"#0b1220", navy:"#101b32", cyan:"#19c6d9", aqua:"#5eead4",
-        mist:"#eefbfd", gold:"#d6b36a"
+        ink:"#0b1220",
+        navy:"#101b32",
+        cyan:"#19c6d9",
+        aqua:"#5eead4",
+        mist:"#eefbfd",
+        gold:"#d6b36a"
       },
-      fontFamily:{ cairo:["Cairo","sans-serif"] },
+      fontFamily:{
+        cairo:["Cairo","sans-serif"]
+      },
       boxShadow:{
         luxe:"0 25px 80px rgba(8,18,35,.14)",
         glow:"0 15px 50px rgba(25,198,217,.24)"
@@ -28,6 +36,7 @@ tailwind.config = {
   }
 }
 </script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,67 +44,260 @@ tailwind.config = {
 
 <style>
 :root{
-  --ink:#0b1220;--navy:#101b32;--cyan:#19c6d9;--aqua:#5eead4;
-  --mist:#eefbfd;--gold:#d6b36a;--muted:#64748b;
+  --ink:#0b1220;
+  --navy:#101b32;
+  --cyan:#19c6d9;
+  --aqua:#5eead4;
+  --mist:#eefbfd;
+  --gold:#d6b36a;
+  --muted:#64748b;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:"Cairo",sans-serif;background:#f8fafc;color:var(--ink);overflow-x:hidden}
-::selection{background:var(--cyan);color:#fff}
-::-webkit-scrollbar{width:9px}
-::-webkit-scrollbar-track{background:#e2e8f0}
-::-webkit-scrollbar-thumb{background:#94a3b8;border-radius:99px}
-::-webkit-scrollbar-thumb:hover{background:#64748b}
-.progress{position:fixed;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--aqua));z-index:9999;width:0}
-.noise:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
-.glass{background:rgba(255,255,255,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.65)}
-.nav-scrolled{background:rgba(255,255,255,.88)!important;box-shadow:0 12px 35px rgba(15,23,42,.08)}
-.hero-grid{background-image:linear-gradient(rgba(25,198,217,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(25,198,217,.07) 1px,transparent 1px);background-size:42px 42px}
-.hero-orb{filter:blur(2px);animation:float 8s ease-in-out infinite}
-@keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
-.reveal.show{opacity:1;transform:none}
-.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}
-.card-lift{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
-.card-lift:hover{transform:translateY(-8px);box-shadow:0 25px 60px rgba(15,23,42,.12);border-color:rgba(25,198,217,.25)}
-.btn{transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
-.btn:hover{transform:translateY(-2px)}
-.marquee{animation:marquee 24s linear infinite}
-@keyframes marquee{to{transform:translateX(50%)}}
-.pulse-ring{animation:ring 2.2s infinite}
-@keyframes ring{0%{box-shadow:0 0 0 0 rgba(25,198,217,.35)}70%{box-shadow:0 0 0 16px rgba(25,198,217,0)}100%{box-shadow:0 0 0 0 rgba(25,198,217,0)}}
-details summary{list-style:none;cursor:pointer}
-details summary::-webkit-details-marker{display:none}
-details[open] .faq-icon{transform:rotate(45deg)}
-.faq-icon{transition:transform .25s}
-.modal{opacity:0;pointer-events:none;transition:.3s}
-.modal.active{opacity:1;pointer-events:auto}
-.modal img{transform:scale(.94);transition:.35s}
-.modal.active img{transform:scale(1)}
-.toast{transform:translateY(140%);transition:.35s}
-.toast.active{transform:none}
-@media(max-width:768px){.hero-grid{background-size:30px 30px}}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  font-family:"Cairo",sans-serif;
+  background:#f8fafc;
+  color:var(--ink);
+  overflow-x:hidden
+}
+
+::selection{
+  background:var(--cyan);
+  color:#fff
+}
+
+::-webkit-scrollbar{
+  width:9px
+}
+
+::-webkit-scrollbar-track{
+  background:#e2e8f0
+}
+
+::-webkit-scrollbar-thumb{
+  background:#94a3b8;
+  border-radius:99px
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#64748b
+}
+
+.progress{
+  position:fixed;
+  top:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--cyan),var(--aqua));
+  z-index:9999;
+  width:0
+}
+
+.noise:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")
+}
+
+.glass{
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,.65)
+}
+
+.nav-scrolled{
+  background:rgba(255,255,255,.88)!important;
+  box-shadow:0 12px 35px rgba(15,23,42,.08)
+}
+
+.hero-grid{
+  background-image:
+    linear-gradient(rgba(25,198,217,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(25,198,217,.07) 1px,transparent 1px);
+  background-size:42px 42px
+}
+
+.hero-orb{
+  filter:blur(2px);
+  animation:float 8s ease-in-out infinite
+}
+
+@keyframes float{
+  0%,100%{
+    transform:translate3d(0,0,0)
+  }
+  50%{
+    transform:translate3d(0,-18px,0)
+  }
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity .8s ease,transform .8s ease
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none
+}
+
+.reveal-delay-1{
+  transition-delay:.1s
+}
+
+.reveal-delay-2{
+  transition-delay:.2s
+}
+
+.reveal-delay-3{
+  transition-delay:.3s
+}
+
+.card-lift{
+  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease
+}
+
+.card-lift:hover{
+  transform:translateY(-8px);
+  box-shadow:0 25px 60px rgba(15,23,42,.12);
+  border-color:rgba(25,198,217,.25)
+}
+
+.btn{
+  transition:transform .25s ease,box-shadow .25s ease,background .25s ease
+}
+
+.btn:hover{
+  transform:translateY(-2px)
+}
+
+.marquee{
+  animation:marquee 24s linear infinite
+}
+
+@keyframes marquee{
+  to{
+    transform:translateX(50%)
+  }
+}
+
+.pulse-ring{
+  animation:ring 2.2s infinite
+}
+
+@keyframes ring{
+  0%{
+    box-shadow:0 0 0 0 rgba(25,198,217,.35)
+  }
+  70%{
+    box-shadow:0 0 0 16px rgba(25,198,217,0)
+  }
+  100%{
+    box-shadow:0 0 0 0 rgba(25,198,217,0)
+  }
+}
+
+details summary{
+  list-style:none;
+  cursor:pointer
+}
+
+details summary::-webkit-details-marker{
+  display:none
+}
+
+details[open] .faq-icon{
+  transform:rotate(45deg)
+}
+
+.faq-icon{
+  transition:transform .25s
+}
+
+.modal{
+  opacity:0;
+  pointer-events:none;
+  transition:.3s
+}
+
+.modal.active{
+  opacity:1;
+  pointer-events:auto
+}
+
+.modal img{
+  transform:scale(.94);
+  transition:.35s
+}
+
+.modal.active img{
+  transform:scale(1)
+}
+
+.toast{
+  transform:translateY(140%);
+  transition:.35s
+}
+
+.toast.active{
+  transform:none
+}
+
+@media(max-width:768px){
+  .hero-grid{
+    background-size:30px 30px
+  }
+}
+
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
-  .reveal{opacity:1;transform:none}
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    animation:none!important;
+    transition:none!important
+  }
+
+  .reveal{
+    opacity:1;
+    transform:none
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div class="progress" id="progress"></div>
 
 <!-- NAVBAR -->
 <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="h-[78px] flex items-center justify-between">
+
       <a href="#home" class="flex items-center gap-3 group">
         <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan to-cyan/70 text-white grid place-items-center shadow-glow group-hover:rotate-3 transition">
           <i class="fa-solid fa-tooth text-xl"></i>
         </div>
+
         <div>
-          <div class="font-black text-slate-900 leading-none">د. أحمد مصطفى</div>
-          <div class="text-[11px] text-cyan-700 font-bold mt-1">طب وتجميل الأسنان</div>
+          <div class="font-black text-slate-900 leading-none">
+            د. أحمد مصطفى
+          </div>
+
+          <div class="text-[11px] text-cyan-700 font-bold mt-1">
+            طب وتجميل الأسنان
+          </div>
         </div>
       </a>
 
@@ -109,46 +311,95 @@ details[open] .faq-icon{transform:rotate(45deg)}
       </nav>
 
       <div class="flex items-center gap-2">
-        <a href="tel:01229505700" class="hidden sm:flex btn items-center gap-2 px-4 py-2.5 rounded-full text-sm font-extrabold text-slate-700 bg-white/70 border border-slate-200">
-          <i class="fa-solid fa-phone text-cyan"></i> 01229505700
+
+        <a href="tel:01229505700"
+           class="hidden sm:flex btn items-center gap-2 px-4 py-2.5 rounded-full text-sm font-extrabold text-slate-700 bg-white/70 border border-slate-200">
+          <i class="fa-solid fa-phone text-cyan"></i>
+          01229505700
         </a>
-        <a href="#booking" class="btn hidden sm:inline-flex bg-ink text-white px-5 py-2.5 rounded-full text-sm font-extrabold shadow-lg">احجز الآن</a>
-        <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-xl bg-white/80 border border-slate-200 text-slate-800">
+
+        <a href="#booking"
+           class="btn hidden sm:inline-flex bg-ink text-white px-5 py-2.5 rounded-full text-sm font-extrabold shadow-lg">
+          احجز الآن
+        </a>
+
+        <button id="menuBtn"
+                class="lg:hidden w-11 h-11 rounded-xl bg-white/80 border border-slate-200 text-slate-800">
           <i class="fa-solid fa-bars"></i>
         </button>
+
       </div>
     </div>
 
-    <div id="mobileMenu" class="hidden lg:hidden glass rounded-2xl p-3 mb-3 shadow-xl">
-      <a href="#about" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">عن المركز</a>
-      <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">الخدمات</a>
-      <a href="#results" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">النتائج</a>
-      <a href="#journey" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">رحلة المريض</a>
-      <a href="#faq" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">الأسئلة</a>
-      <a href="#contact" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">التواصل</a>
-      <a href="#booking" class="block text-center mt-2 bg-ink text-white px-4 py-3 rounded-xl font-extrabold">احجز موعدك</a>
+    <div id="mobileMenu"
+         class="hidden lg:hidden glass rounded-2xl p-3 mb-3 shadow-xl">
+
+      <a href="#about" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+        عن المركز
+      </a>
+
+      <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+        الخدمات
+      </a>
+
+      <a href="#results" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+        النتائج
+      </a>
+
+      <a href="#journey" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+        رحلة المريض
+      </a>
+
+      <a href="#faq" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+        الأسئلة
+      </a>
+
+      <a href="#contact" class="block px-4 py-3 rounded-xl hover:bg-cyan/10 font-bold">
+        التواصل
+      </a>
+
+      <a href="#booking"
+         class="block text-center mt-2 bg-ink text-white px-4 py-3 rounded-xl font-extrabold">
+        احجز موعدك
+      </a>
+
     </div>
   </div>
 </header>
 
+
 <!-- HERO -->
 <main id="home">
+
 <section class="relative min-h-screen pt-28 pb-16 overflow-hidden bg-white hero-grid noise">
+
   <div class="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-cyan/20 hero-orb"></div>
-  <div class="absolute bottom-0 -left-32 w-[360px] h-[360px] rounded-full bg-aqua/20 hero-orb" style="animation-delay:2s"></div>
+
+  <div class="absolute bottom-0 -left-32 w-[360px] h-[360px] rounded-full bg-aqua/20 hero-orb"
+       style="animation-delay:2s"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
     <div class="grid lg:grid-cols-[1.02fr_.98fr] gap-12 items-center min-h-[calc(100vh-120px)]">
 
       <div class="text-center lg:text-right reveal">
+
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan/10 text-cyan-800 border border-cyan/15 font-extrabold text-xs mb-6">
+
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
           مركز متخصص في طب وتجميل الأسنان
+
         </div>
 
         <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-[1.15] text-ink">
+
           ابتسامتك ليست
-          <span class="block text-transparent bg-clip-text bg-gradient-to-l from-cyan-600 to-teal-500">تفصيلاً صغيراً.</span>
+
+          <span class="block text-transparent bg-clip-text bg-gradient-to-l from-cyan-600 to-teal-500">
+            تفصيلاً صغيراً.
+          </span>
+
         </h1>
 
         <p class="max-w-2xl mx-auto lg:mx-0 mt-6 text-slate-600 text-base sm:text-lg leading-8">
@@ -156,551 +407,1617 @@ details[open] .faq-icon{transform:rotate(45deg)}
         </p>
 
         <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mt-8">
-          <a href="#booking" class="btn bg-ink text-white px-7 py-4 rounded-2xl font-extrabold shadow-xl flex items-center justify-center gap-3">
+
+          <a href="#booking"
+             class="btn bg-ink text-white px-7 py-4 rounded-2xl font-extrabold shadow-xl flex items-center justify-center gap-3">
             احجز موعدك
             <i class="fa-solid fa-arrow-left"></i>
           </a>
-          <a href="tel:01229505700" class="btn bg-white border border-slate-200 px-7 py-4 rounded-2xl font-extrabold flex items-center justify-center gap-3">
-            <i class="fa-solid fa-phone text-cyan"></i> تحدث معنا
+
+          <a href="tel:01229505700"
+             class="btn bg-white border border-slate-200 px-7 py-4 rounded-2xl font-extrabold flex items-center justify-center gap-3">
+            <i class="fa-solid fa-phone text-cyan"></i>
+            تحدث معنا
           </a>
+
         </div>
 
         <div class="grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0 mt-10">
+
           <div class="text-center lg:text-right">
-            <div class="text-2xl font-black text-ink">4.9<span class="text-cyan">/5</span></div>
-            <div class="text-xs text-slate-500 mt-1">تقييمات المرضى</div>
+            <div class="text-2xl font-black text-ink">
+              4.9<span class="text-cyan">/5</span>
+            </div>
+            <div class="text-xs text-slate-500 mt-1">
+              تقييمات المرضى
+            </div>
           </div>
+
           <div class="text-center lg:text-right border-x border-slate-200">
-            <div class="text-2xl font-black text-ink">10+</div>
-            <div class="text-xs text-slate-500 mt-1">سنوات خبرة</div>
+            <div class="text-2xl font-black text-ink">
+              10+
+            </div>
+            <div class="text-xs text-slate-500 mt-1">
+              سنوات خبرة
+            </div>
           </div>
+
           <div class="text-center lg:text-right">
-            <div class="text-2xl font-black text-ink">100%</div>
-            <div class="text-xs text-slate-500 mt-1">اهتمام بالمريض</div>
+            <div class="text-2xl font-black text-ink">
+              100%
+            </div>
+            <div class="text-xs text-slate-500 mt-1">
+              اهتمام بالمريض
+            </div>
           </div>
+
         </div>
       </div>
 
+
       <div class="relative reveal reveal-delay-2">
+
         <div class="absolute -inset-5 rounded-[3rem] bg-gradient-to-br from-cyan/25 to-aqua/10 blur-2xl"></div>
+
         <div class="relative rounded-[2.5rem] overflow-hidden border-[10px] border-white shadow-luxe bg-slate-100">
-          <img loading="eager" src="https://images.pexels.com/photos/5355920/pexels-photo-5355920.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="عيادة أسنان حديثة" class="w-full h-[470px] sm:h-[590px] object-cover">
+
+          <img loading="eager"
+               src="https://images.pexels.com/photos/5355920/pexels-photo-5355920.jpeg?auto=compress&cs=tinysrgb&w=1400"
+               alt="عيادة أسنان حديثة"
+               class="w-full h-[470px] sm:h-[590px] object-cover">
+
           <div class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 shadow-xl">
+
             <div class="flex items-center gap-3">
+
               <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 grid place-items-center">
                 <i class="fa-solid fa-shield-heart"></i>
               </div>
+
               <div>
-                <div class="font-black text-slate-900">رعاية تبدأ من التفاصيل</div>
-                <div class="text-xs text-slate-500 mt-1">راحة • تعقيم • متابعة</div>
+                <div class="font-black text-slate-900">
+                  رعاية تبدأ من التفاصيل
+                </div>
+
+                <div class="text-xs text-slate-500 mt-1">
+                  راحة • تعقيم • متابعة
+                </div>
               </div>
+
             </div>
           </div>
         </div>
 
+
         <div class="absolute -top-5 -left-4 sm:-left-8 bg-white rounded-2xl shadow-xl border border-slate-100 p-4">
+
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 grid place-items-center"><i class="fa-solid fa-star"></i></div>
-            <div>
-              <div class="font-black">4.9 / 5</div>
-              <div class="text-[10px] text-slate-500">رضا المرضى</div>
+
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 grid place-items-center">
+              <i class="fa-solid fa-star"></i>
             </div>
+
+            <div>
+              <div class="font-black">
+                4.9 / 5
+              </div>
+
+              <div class="text-[10px] text-slate-500">
+                رضا المرضى
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- TRUST BAR -->
 <section class="bg-ink text-white overflow-hidden">
+
   <div class="max-w-7xl mx-auto px-4 py-5">
+
     <div class="flex flex-wrap justify-center gap-x-10 gap-y-3 text-xs sm:text-sm font-bold text-slate-300">
-      <span><i class="fa-solid fa-circle-check text-cyan ml-2"></i>تقنيات حديثة</span>
-      <span><i class="fa-solid fa-circle-check text-cyan ml-2"></i>تعقيم متقدم</span>
-      <span><i class="fa-solid fa-circle-check text-cyan ml-2"></i>خطط علاج شخصية</span>
-      <span><i class="fa-solid fa-circle-check text-cyan ml-2"></i>حجز سريع عبر واتساب</span>
+
+      <span>
+        <i class="fa-solid fa-circle-check text-cyan ml-2"></i>
+        تقنيات حديثة
+      </span>
+
+      <span>
+        <i class="fa-solid fa-circle-check text-cyan ml-2"></i>
+        تعقيم متقدم
+      </span>
+
+      <span>
+        <i class="fa-solid fa-circle-check text-cyan ml-2"></i>
+        خطط علاج شخصية
+      </span>
+
+      <span>
+        <i class="fa-solid fa-circle-check text-cyan ml-2"></i>
+        حجز سريع عبر واتساب
+      </span>
+
     </div>
   </div>
 </section>
 
+
 <!-- ABOUT -->
 <section id="about" class="py-24 bg-slate-50">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-14 items-center">
+
       <div class="reveal">
+
         <div class="relative max-w-md mx-auto">
+
           <div class="absolute -inset-4 rounded-[2.5rem] bg-cyan/15 rotate-3"></div>
+
           <div class="relative rounded-[2.5rem] overflow-hidden shadow-luxe bg-white p-3">
-            <img loading="lazy" src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=900" alt="طبيب أسنان" class="rounded-[2rem] w-full h-[470px] object-cover">
+
+            <img loading="lazy"
+                 src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=900"
+                 alt="طبيب أسنان"
+                 class="rounded-[2rem] w-full h-[470px] object-cover">
+
           </div>
+
           <div class="absolute -bottom-7 -right-5 sm:-right-10 bg-white rounded-2xl shadow-xl border border-slate-100 p-5">
-            <div class="text-xs text-slate-500">الاهتمام</div>
-            <div class="font-black text-lg mt-1">من أول زيارة</div>
-            <div class="flex gap-1 mt-2 text-cyan text-xs">★★★★★</div>
+
+            <div class="text-xs text-slate-500">
+              الاهتمام
+            </div>
+
+            <div class="font-black text-lg mt-1">
+              من أول زيارة
+            </div>
+
+            <div class="flex gap-1 mt-2 text-cyan text-xs">
+              ★★★★★
+            </div>
+
           </div>
         </div>
       </div>
 
+
       <div class="reveal reveal-delay-1">
-        <span class="text-cyan-700 font-black text-sm">عن المركز</span>
-        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">رعاية طبية بلمسة<br><span class="text-cyan-600">إنسانية.</span></h2>
+
+        <span class="text-cyan-700 font-black text-sm">
+          عن المركز
+        </span>
+
+        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
+          رعاية طبية بلمسة
+          <br>
+          <span class="text-cyan-600">
+            إنسانية.
+          </span>
+        </h2>
+
         <p class="text-slate-600 leading-8 mt-6">
           في مركز د. أحمد مصطفى نؤمن أن زيارة طبيب الأسنان يجب أن تكون تجربة واضحة ومطمئنة. لذلك نهتم بفهم احتياجاتك، شرح الخيارات، ووضع خطة علاج مناسبة قبل البدء.
         </p>
 
         <div class="grid sm:grid-cols-2 gap-4 mt-8">
+
           <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-user-doctor"></i></div>
-            <h3 class="font-black">رعاية متخصصة</h3>
-            <p class="text-xs text-slate-500 leading-6 mt-2">تقييم دقيق وخطة علاج تناسب حالتك.</p>
+
+            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+
+            <h3 class="font-black">
+              رعاية متخصصة
+            </h3>
+
+            <p class="text-xs text-slate-500 leading-6 mt-2">
+              تقييم دقيق وخطة علاج تناسب حالتك.
+            </p>
+
           </div>
+
+
           <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-microchip"></i></div>
-            <h3 class="font-black">تقنيات حديثة</h3>
-            <p class="text-xs text-slate-500 leading-6 mt-2">أدوات وتقنيات تساعد على دقة أفضل.</p>
+
+            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <h3 class="font-black">
+              تقنيات حديثة
+            </h3>
+
+            <p class="text-xs text-slate-500 leading-6 mt-2">
+              أدوات وتقنيات تساعد على دقة أفضل.
+            </p>
+
           </div>
+
+
           <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-shield-virus"></i></div>
-            <h3 class="font-black">نظافة وتعقيم</h3>
-            <p class="text-xs text-slate-500 leading-6 mt-2">اهتمام صارم بالنظافة داخل المركز.</p>
+
+            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+
+            <h3 class="font-black">
+              نظافة وتعقيم
+            </h3>
+
+            <p class="text-xs text-slate-500 leading-6 mt-2">
+              اهتمام صارم بالنظافة داخل المركز.
+            </p>
+
           </div>
+
+
           <div class="bg-white p-5 rounded-2xl border border-slate-100 card-lift">
-            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-heart"></i></div>
-            <h3 class="font-black">راحة المريض</h3>
-            <p class="text-xs text-slate-500 leading-6 mt-2">تجربة هادئة وشرح واضح في كل خطوة.</p>
+
+            <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="font-black">
+              راحة المريض
+            </h3>
+
+            <p class="text-xs text-slate-500 leading-6 mt-2">
+              تجربة هادئة وشرح واضح في كل خطوة.
+            </p>
+
           </div>
+
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- SERVICES -->
 <section id="services" class="py-24 bg-white">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="max-w-2xl mb-12 reveal">
-      <span class="text-cyan-700 font-black text-sm">خدمات المركز</span>
-      <h2 class="text-3xl sm:text-5xl font-black mt-3">حلول متكاملة لابتسامتك.</h2>
-      <p class="text-slate-500 mt-4 leading-7">اختر الخدمة المناسبة، ثم احجز موعدك بسهولة عبر الواتساب.</p>
+
+      <span class="text-cyan-700 font-black text-sm">
+        خدمات المركز
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-black mt-3">
+        حلول متكاملة لابتسامتك.
+      </h2>
+
+      <p class="text-slate-500 mt-4 leading-7">
+        اختر الخدمة المناسبة، ثم احجز موعدك بسهولة عبر الواتساب.
+      </p>
+
     </div>
 
+
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
       <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal">
+
         <div class="relative overflow-hidden rounded-2xl">
-          <img loading="lazy" src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=800" alt="زراعة وتجميل الأسنان" class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">01</span>
+
+          <img loading="lazy"
+               src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="زراعة وتجميل الأسنان"
+               class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
+
+          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+            01
+          </span>
+
         </div>
+
         <div class="p-4">
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-tooth"></i></div>
-          <h3 class="font-black text-lg">زراعة وتجميل الأسنان</h3>
-          <p class="text-xs text-slate-500 leading-6 mt-2">حلول لتعويض الأسنان وتحسين الشكل والوظيفة.</p>
-          <a href="#booking" class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">احجز الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+
+          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+
+          <h3 class="font-black text-lg">
+            زراعة وتجميل الأسنان
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            حلول لتعويض الأسنان وتحسين الشكل والوظيفة.
+          </p>
+
+          <a href="#booking"
+             class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
+            احجز الخدمة
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
         </div>
       </article>
+
 
       <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-1">
+
         <div class="relative overflow-hidden rounded-2xl">
-          <img loading="lazy" src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=800" alt="تقويم الأسنان" class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">02</span>
+
+          <img loading="lazy"
+               src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="تقويم الأسنان"
+               class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
+
+          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+            02
+          </span>
+
         </div>
+
         <div class="p-4">
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <h3 class="font-black text-lg">تقويم الأسنان</h3>
-          <p class="text-xs text-slate-500 leading-6 mt-2">تحسين ترتيب الأسنان للحصول على ابتسامة متناسقة.</p>
-          <a href="#booking" class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">احجز الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+
+          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+
+          <h3 class="font-black text-lg">
+            تقويم الأسنان
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            تحسين ترتيب الأسنان للحصول على ابتسامة متناسقة.
+          </p>
+
+          <a href="#booking"
+             class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
+            احجز الخدمة
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
         </div>
       </article>
+
 
       <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-2">
+
         <div class="relative overflow-hidden rounded-2xl">
-          <img loading="lazy" src="https://images.pexels.com/photos/3764014/pexels-photo-3764014.jpeg?auto=compress&cs=tinysrgb&w=800" alt="تبييض الأسنان" class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">03</span>
+
+          <img loading="lazy"
+               src="https://images.pexels.com/photos/3764014/pexels-photo-3764014.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="تبييض الأسنان"
+               class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
+
+          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+            03
+          </span>
+
         </div>
+
         <div class="p-4">
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-sparkles"></i></div>
-          <h3 class="font-black text-lg">تبييض الأسنان</h3>
-          <p class="text-xs text-slate-500 leading-6 mt-2">ابتسامة أكثر إشراقاً مع تقييم مناسب لحالتك.</p>
-          <a href="#booking" class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">احجز الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+
+          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <i class="fa-solid fa-sparkles"></i>
+          </div>
+
+          <h3 class="font-black text-lg">
+            تبييض الأسنان
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            ابتسامة أكثر إشراقاً مع تقييم مناسب لحالتك.
+          </p>
+
+          <a href="#booking"
+             class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
+            احجز الخدمة
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
         </div>
       </article>
 
+
       <article class="group bg-slate-50 rounded-3xl p-3 border border-slate-100 card-lift reveal reveal-delay-3">
+
         <div class="relative overflow-hidden rounded-2xl">
-          <img loading="lazy" src="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=800" alt="علاج الجذور والأعصاب" class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">04</span>
+
+          <img loading="lazy"
+               src="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="علاج الجذور والأعصاب"
+               class="w-full h-52 object-cover group-hover:scale-105 transition duration-700">
+
+          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur rounded-full px-3 py-1.5 text-[10px] font-black">
+            04
+          </span>
+
         </div>
+
         <div class="p-4">
-          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4"><i class="fa-solid fa-microscope"></i></div>
-          <h3 class="font-black text-lg">علاج الجذور والأعصاب</h3>
-          <p class="text-xs text-slate-500 leading-6 mt-2">تشخيص وعلاج مشاكل الجذور والقنوات العصبية.</p>
-          <a href="#booking" class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">احجز الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+
+          <div class="w-11 h-11 rounded-xl bg-cyan/10 text-cyan grid place-items-center mb-4">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+
+          <h3 class="font-black text-lg">
+            علاج الجذور والأعصاب
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            تشخيص وعلاج مشاكل الجذور والقنوات العصبية.
+          </p>
+
+          <a href="#booking"
+             class="inline-flex items-center gap-2 text-cyan-700 text-xs font-black mt-4">
+            احجز الخدمة
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
         </div>
       </article>
+
     </div>
   </div>
 </section>
+
 
 <!-- DARK STATEMENT -->
 <section class="py-24 bg-ink text-white relative overflow-hidden noise">
+
   <div class="absolute w-96 h-96 rounded-full bg-cyan/10 blur-3xl -top-32 -left-20"></div>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
     <div class="grid md:grid-cols-3 gap-8 items-center">
+
       <div class="md:col-span-2 reveal">
-        <span class="text-cyan font-black text-sm">فلسفتنا</span>
-        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">طب الأسنان لا يبدأ من الكرسي.<br><span class="text-cyan">يبدأ من الثقة.</span></h2>
-        <p class="text-slate-400 leading-8 mt-5 max-w-2xl">نشرح لك ما تحتاجه، لماذا تحتاجه، وما الخيارات المتاحة أمامك — لأن المريض الواعي شريك أساسي في نجاح العلاج.</p>
+
+        <span class="text-cyan font-black text-sm">
+          فلسفتنا
+        </span>
+
+        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
+          طب الأسنان لا يبدأ من الكرسي.
+          <br>
+          <span class="text-cyan">
+            يبدأ من الثقة.
+          </span>
+        </h2>
+
+        <p class="text-slate-400 leading-8 mt-5 max-w-2xl">
+          نشرح لك ما تحتاجه، لماذا تحتاجه، وما الخيارات المتاحة أمامك — لأن المريض الواعي شريك أساسي في نجاح العلاج.
+        </p>
+
       </div>
+
       <div class="reveal reveal-delay-2 flex md:justify-end">
-        <a href="#booking" class="btn inline-flex items-center gap-3 bg-white text-ink px-7 py-4 rounded-2xl font-black shadow-xl">ابدأ رحلتك <i class="fa-solid fa-arrow-left"></i></a>
+
+        <a href="#booking"
+           class="btn inline-flex items-center gap-3 bg-white text-ink px-7 py-4 rounded-2xl font-black shadow-xl">
+          ابدأ رحلتك
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- RESULTS / GALLERY -->
 <section id="results" class="py-24 bg-slate-50">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-12 reveal">
+
       <div>
-        <span class="text-cyan-700 font-black text-sm">معرض توضيحي</span>
-        <h2 class="text-3xl sm:text-5xl font-black mt-3">نتيجة الاهتمام بالتفاصيل.</h2>
+
+        <span class="text-cyan-700 font-black text-sm">
+          معرض توضيحي
+        </span>
+
+        <h2 class="text-3xl sm:text-5xl font-black mt-3">
+          نتيجة الاهتمام بالتفاصيل.
+        </h2>
+
       </div>
-      <p class="text-sm text-slate-500 max-w-md leading-7">صور توضيحية للخدمات والمجال الطبي. النتائج الفعلية تختلف حسب كل حالة ويتم تقييمها بشكل فردي.</p>
+
+      <p class="text-sm text-slate-500 max-w-md leading-7">
+        صور توضيحية للخدمات والمجال الطبي. النتائج الفعلية تختلف حسب كل حالة ويتم تقييمها بشكل فردي.
+      </p>
+
     </div>
 
+
     <div class="grid md:grid-cols-12 gap-5">
-      <button data-image="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1400" class="gallery-item md:col-span-7 relative overflow-hidden rounded-3xl h-[360px] md:h-[520px] group reveal text-right">
-        <img loading="lazy" src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="صورة توضيحية" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-        <span class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 font-black">ابتسامة أكثر تناسقاً <i class="fa-solid fa-expand mr-2 text-cyan"></i></span>
+
+      <button
+        data-image="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1400"
+        class="gallery-item md:col-span-7 relative overflow-hidden rounded-3xl h-[360px] md:h-[520px] group reveal text-right">
+
+        <img loading="lazy"
+             src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1000"
+             alt="صورة توضيحية"
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+
+        <span class="absolute inset-x-5 bottom-5 glass rounded-2xl p-4 font-black">
+          ابتسامة أكثر تناسقاً
+          <i class="fa-solid fa-expand mr-2 text-cyan"></i>
+        </span>
+
       </button>
+
+
       <div class="md:col-span-5 grid gap-5">
-        <button data-image="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=1200" class="gallery-item relative overflow-hidden rounded-3xl h-60 group reveal reveal-delay-1 text-right">
-          <img loading="lazy" src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=800" alt="زراعة وتجميل الأسنان" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-          <span class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">زراعة وتجميل</span>
+
+        <button
+          data-image="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          class="gallery-item relative overflow-hidden rounded-3xl h-60 group reveal reveal-delay-1 text-right">
+
+          <img loading="lazy"
+               src="https://images.pexels.com/photos/3845766/pexels-photo-3845766.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="زراعة وتجميل الأسنان"
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+
+          <span class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">
+            زراعة وتجميل
+          </span>
+
         </button>
-        <button data-image="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=1200" class="gallery-item relative overflow-hidden rounded-3xl h-60 group reveal reveal-delay-2 text-right">
-          <img loading="lazy" src="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=800" alt="علاج الأسنان" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-          <span class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">رعاية متقدمة</span>
+
+
+        <button
+          data-image="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          class="gallery-item relative overflow-hidden rounded-3xl h-60 group reveal reveal-delay-2 text-right">
+
+          <img loading="lazy"
+               src="https://images.pexels.com/photos/3845983/pexels-photo-3845983.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="علاج الأسنان"
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+
+          <span class="absolute bottom-4 right-4 bg-ink/80 text-white rounded-xl px-4 py-2 text-xs font-black">
+            رعاية متقدمة
+          </span>
+
         </button>
+
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- JOURNEY -->
 <section id="journey" class="py-24 bg-white">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-      <span class="text-cyan-700 font-black text-sm">رحلة المريض</span>
-      <h2 class="text-3xl sm:text-5xl font-black mt-3">بسيطة. واضحة. مطمئنة.</h2>
+
+      <span class="text-cyan-700 font-black text-sm">
+        رحلة المريض
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-black mt-3">
+        بسيطة. واضحة. مطمئنة.
+      </h2>
+
     </div>
 
+
     <div class="grid md:grid-cols-4 gap-5">
+
+
+      <!-- 01 -->
       <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal">
-        <span class="text-6xl font-black text-cyan/10 absolute top-3 left-5">01</span>
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative"><i class="fa-solid fa-calendar-check"></i></div>
-        <h3 class="font-black mt-7">احجز</h3><p class="text-xs text-slate-500 leading-6 mt-2">أرسل بياناتك عبر نموذج الحجز.</p>
+
+        <!-- تم زيادة وضوح الرقم -->
+        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+          01
+        </span>
+
+        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+
+        <h3 class="font-black mt-7">
+          احجز
+        </h3>
+
+        <p class="text-xs text-slate-500 leading-6 mt-2">
+          أرسل بياناتك عبر نموذج الحجز.
+        </p>
+
       </div>
+
+
+      <!-- 02 -->
       <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-1">
-        <span class="text-6xl font-black text-cyan/10 absolute top-3 left-5">02</span>
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative"><i class="fa-solid fa-comments"></i></div>
-        <h3 class="font-black mt-7">استشارة</h3><p class="text-xs text-slate-500 leading-6 mt-2">نفهم احتياجك ونناقش الخيارات.</p>
+
+        <!-- تم زيادة وضوح الرقم -->
+        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+          02
+        </span>
+
+        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+
+        <h3 class="font-black mt-7">
+          استشارة
+        </h3>
+
+        <p class="text-xs text-slate-500 leading-6 mt-2">
+          نفهم احتياجك ونناقش الخيارات.
+        </p>
+
       </div>
+
+
+      <!-- 03 -->
       <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-2">
-        <span class="text-6xl font-black text-cyan/10 absolute top-3 left-5">03</span>
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative"><i class="fa-solid fa-clipboard-list"></i></div>
-        <h3 class="font-black mt-7">خطة علاج</h3><p class="text-xs text-slate-500 leading-6 mt-2">نضع خطة مناسبة لحالتك وأهدافك.</p>
+
+        <!-- تم زيادة وضوح الرقم -->
+        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+          03
+        </span>
+
+        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+          <i class="fa-solid fa-clipboard-list"></i>
+        </div>
+
+        <h3 class="font-black mt-7">
+          خطة علاج
+        </h3>
+
+        <p class="text-xs text-slate-500 leading-6 mt-2">
+          نضع خطة مناسبة لحالتك وأهدافك.
+        </p>
+
       </div>
+
+
+      <!-- 04 -->
       <div class="relative p-7 rounded-3xl bg-slate-50 border border-slate-100 card-lift reveal reveal-delay-3">
-        <span class="text-6xl font-black text-cyan/10 absolute top-3 left-5">04</span>
-        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative"><i class="fa-solid fa-face-smile-beam"></i></div>
-        <h3 class="font-black mt-7">متابعة</h3><p class="text-xs text-slate-500 leading-6 mt-2">نحرص على المتابعة والاهتمام بعد العلاج.</p>
+
+        <!-- تم زيادة وضوح الرقم -->
+        <span class="text-6xl font-black text-cyan absolute top-3 left-5 opacity-90">
+          04
+        </span>
+
+        <div class="w-14 h-14 rounded-2xl bg-cyan/10 text-cyan grid place-items-center text-xl relative">
+          <i class="fa-solid fa-face-smile-beam"></i>
+        </div>
+
+        <h3 class="font-black mt-7">
+          متابعة
+        </h3>
+
+        <p class="text-xs text-slate-500 leading-6 mt-2">
+          نحرص على المتابعة والاهتمام بعد العلاج.
+        </p>
+
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- WHY -->
 <section class="py-24 bg-cyan-50">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="grid lg:grid-cols-2 gap-12 items-center">
+
       <div class="reveal">
-        <span class="text-cyan-700 font-black text-sm">لماذا نحن؟</span>
-        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">كل زيارة لها<br>معاييرها الخاصة.</h2>
-        <p class="text-slate-600 leading-8 mt-5">لا نستخدم أسلوباً واحداً للجميع. نبدأ بالتقييم ثم نبني التجربة حول احتياجاتك.</p>
+
+        <span class="text-cyan-700 font-black text-sm">
+          لماذا نحن؟
+        </span>
+
+        <h2 class="text-3xl sm:text-5xl font-black mt-3 leading-tight">
+          كل زيارة لها
+          <br>
+          معاييرها الخاصة.
+        </h2>
+
+        <p class="text-slate-600 leading-8 mt-5">
+          لا نستخدم أسلوباً واحداً للجميع. نبدأ بالتقييم ثم نبني التجربة حول احتياجاتك.
+        </p>
+
       </div>
+
+
       <div class="grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
-        <div class="bg-white p-6 rounded-3xl shadow-sm"><i class="fa-solid fa-bolt text-cyan text-xl"></i><h3 class="font-black mt-5">وضوح في كل خطوة</h3><p class="text-xs text-slate-500 leading-6 mt-2">شرح مبسط قبل اتخاذ القرار.</p></div>
-        <div class="bg-white p-6 rounded-3xl shadow-sm"><i class="fa-solid fa-syringe text-cyan text-xl"></i><h3 class="font-black mt-5">معايير تعقيم</h3><p class="text-xs text-slate-500 leading-6 mt-2">اهتمام بالنظافة وسلامة البيئة.</p></div>
-        <div class="bg-white p-6 rounded-3xl shadow-sm"><i class="fa-solid fa-clock text-cyan text-xl"></i><h3 class="font-black mt-5">تنظيم المواعيد</h3><p class="text-xs text-slate-500 leading-6 mt-2">حجز مباشر وسهل بدون تعقيد.</p></div>
-        <div class="bg-white p-6 rounded-3xl shadow-sm"><i class="fa-solid fa-headset text-cyan text-xl"></i><h3 class="font-black mt-5">تواصل سريع</h3><p class="text-xs text-slate-500 leading-6 mt-2">تواصل معنا عبر الهاتف أو واتساب.</p></div>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+
+          <i class="fa-solid fa-bolt text-cyan text-xl"></i>
+
+          <h3 class="font-black mt-5">
+            وضوح في كل خطوة
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            شرح مبسط قبل اتخاذ القرار.
+          </p>
+
+        </div>
+
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+
+          <i class="fa-solid fa-syringe text-cyan text-xl"></i>
+
+          <h3 class="font-black mt-5">
+            معايير تعقيم
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            اهتمام بالنظافة وسلامة البيئة.
+          </p>
+
+        </div>
+
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+
+          <i class="fa-solid fa-clock text-cyan text-xl"></i>
+
+          <h3 class="font-black mt-5">
+            تنظيم المواعيد
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            حجز مباشر وسهل بدون تعقيد.
+          </p>
+
+        </div>
+
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm">
+
+          <i class="fa-solid fa-headset text-cyan text-xl"></i>
+
+          <h3 class="font-black mt-5">
+            تواصل سريع
+          </h3>
+
+          <p class="text-xs text-slate-500 leading-6 mt-2">
+            تواصل معنا عبر الهاتف أو واتساب.
+          </p>
+
+        </div>
+
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- TESTIMONIALS -->
 <section class="py-24 bg-white">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="text-center max-w-2xl mx-auto mb-12 reveal">
-      <span class="text-cyan-700 font-black text-sm">آراء المرضى</span>
-      <h2 class="text-3xl sm:text-5xl font-black mt-3">تجارب تصنع الثقة.</h2>
+
+      <span class="text-cyan-700 font-black text-sm">
+        آراء المرضى
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-black mt-3">
+        تجارب تصنع الثقة.
+      </h2>
+
     </div>
+
+
     <div class="grid md:grid-cols-3 gap-5">
+
       <blockquote class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal">
-        <div class="text-amber-400 text-sm">★★★★★</div>
-        <p class="text-sm text-slate-600 leading-7 mt-5">"تجربة ممتازة جداً، المكان مريح والتعامل محترم والشرح أثناء الكشف كان واضح."</p>
-        <footer class="flex items-center gap-3 mt-7"><div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">م</div><div><b class="text-sm">محمد علي</b><div class="text-[10px] text-slate-400">مريض</div></div></footer>
+
+        <div class="text-amber-400 text-sm">
+          ★★★★★
+        </div>
+
+        <p class="text-sm text-slate-600 leading-7 mt-5">
+          "تجربة ممتازة جداً، المكان مريح والتعامل محترم والشرح أثناء الكشف كان واضح."
+        </p>
+
+        <footer class="flex items-center gap-3 mt-7">
+
+          <div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
+            م
+          </div>
+
+          <div>
+            <b class="text-sm">
+              محمد علي
+            </b>
+
+            <div class="text-[10px] text-slate-400">
+              مريض
+            </div>
+          </div>
+
+        </footer>
       </blockquote>
+
+
       <blockquote class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal reveal-delay-1">
-        <div class="text-amber-400 text-sm">★★★★★</div>
-        <p class="text-sm text-slate-600 leading-7 mt-5">"المكان نظيف جداً والتعامل ممتاز، حسيت باهتمام حقيقي من أول زيارة."</p>
-        <footer class="flex items-center gap-3 mt-7"><div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">س</div><div><b class="text-sm">سارة محمود</b><div class="text-[10px] text-slate-400">مريضة</div></div></footer>
+
+        <div class="text-amber-400 text-sm">
+          ★★★★★
+        </div>
+
+        <p class="text-sm text-slate-600 leading-7 mt-5">
+          "المكان نظيف جداً والتعامل ممتاز، حسيت باهتمام حقيقي من أول زيارة."
+        </p>
+
+        <footer class="flex items-center gap-3 mt-7">
+
+          <div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
+            س
+          </div>
+
+          <div>
+            <b class="text-sm">
+              سارة محمود
+            </b>
+
+            <div class="text-[10px] text-slate-400">
+              مريضة
+            </div>
+          </div>
+
+        </footer>
       </blockquote>
+
+
       <blockquote class="bg-slate-50 border border-slate-100 rounded-3xl p-7 card-lift reveal reveal-delay-2">
-        <div class="text-amber-400 text-sm">★★★★★</div>
-        <p class="text-sm text-slate-600 leading-7 mt-5">"تجربة مريحة جداً والنتيجة كانت ممتازة. أنصح بالمركز بكل تأكيد."</p>
-        <footer class="flex items-center gap-3 mt-7"><div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">خ</div><div><b class="text-sm">خالد عمر</b><div class="text-[10px] text-slate-400">مريض</div></div></footer>
+
+        <div class="text-amber-400 text-sm">
+          ★★★★★
+        </div>
+
+        <p class="text-sm text-slate-600 leading-7 mt-5">
+          "تجربة مريحة جداً والنتيجة كانت ممتازة. أنصح بالمركز بكل تأكيد."
+        </p>
+
+        <footer class="flex items-center gap-3 mt-7">
+
+          <div class="w-10 h-10 rounded-full bg-cyan/10 text-cyan grid place-items-center font-black">
+            خ
+          </div>
+
+          <div>
+            <b class="text-sm">
+              خالد عمر
+            </b>
+
+            <div class="text-[10px] text-slate-400">
+              مريض
+            </div>
+          </div>
+
+        </footer>
       </blockquote>
+
     </div>
   </div>
 </section>
+
 
 <!-- FAQ -->
 <section id="faq" class="py-24 bg-slate-50">
+
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="text-center mb-12 reveal">
-      <span class="text-cyan-700 font-black text-sm">الأسئلة الشائعة</span>
-      <h2 class="text-3xl sm:text-5xl font-black mt-3">قبل ما تزورنا.</h2>
+
+      <span class="text-cyan-700 font-black text-sm">
+        الأسئلة الشائعة
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-black mt-3">
+        قبل ما تزورنا.
+      </h2>
+
     </div>
+
+
     <div class="space-y-3">
+
       <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal" open>
-        <summary class="flex items-center justify-between gap-4 font-black"><span>كيف أحجز موعداً؟</span><span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center"><i class="fa-solid fa-plus text-xs"></i></span></summary>
-        <p class="text-sm text-slate-500 leading-7 mt-4">املأ نموذج الحجز أسفل الصفحة، وسيتم تجهيز رسالة واتساب ببيانات الحجز لتأكيد الموعد.</p>
+
+        <summary class="flex items-center justify-between gap-4 font-black">
+
+          <span>
+            كيف أحجز موعداً؟
+          </span>
+
+          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </span>
+
+        </summary>
+
+        <p class="text-sm text-slate-500 leading-7 mt-4">
+          املأ نموذج الحجز أسفل الصفحة، وسيتم تجهيز رسالة واتساب ببيانات الحجز لتأكيد الموعد.
+        </p>
+
       </details>
+
+
       <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
-        <summary class="flex items-center justify-between gap-4 font-black"><span>هل يمكن اختيار الخدمة قبل الزيارة؟</span><span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center"><i class="fa-solid fa-plus text-xs"></i></span></summary>
-        <p class="text-sm text-slate-500 leading-7 mt-4">نعم، يمكنك اختيار الخدمة الأقرب لاحتياجك، وسيتم تقييم الحالة بشكل مناسب أثناء الزيارة.</p>
+
+        <summary class="flex items-center justify-between gap-4 font-black">
+
+          <span>
+            هل يمكن اختيار الخدمة قبل الزيارة؟
+          </span>
+
+          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </span>
+
+        </summary>
+
+        <p class="text-sm text-slate-500 leading-7 mt-4">
+          نعم، يمكنك اختيار الخدمة الأقرب لاحتياجك، وسيتم تقييم الحالة بشكل مناسب أثناء الزيارة.
+        </p>
+
       </details>
+
+
       <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
-        <summary class="flex items-center justify-between gap-4 font-black"><span>ما مواعيد العمل؟</span><span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center"><i class="fa-solid fa-plus text-xs"></i></span></summary>
-        <p class="text-sm text-slate-500 leading-7 mt-4">السبت إلى الخميس من 4:00 مساءً حتى 10:00 مساءً. الجمعة إجازة أسبوعية.</p>
+
+        <summary class="flex items-center justify-between gap-4 font-black">
+
+          <span>
+            ما مواعيد العمل؟
+          </span>
+
+          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </span>
+
+        </summary>
+
+        <p class="text-sm text-slate-500 leading-7 mt-4">
+          السبت إلى الخميس من 4:00 مساءً حتى 10:00 مساءً. الجمعة إجازة أسبوعية.
+        </p>
+
       </details>
+
+
       <details class="bg-white rounded-2xl border border-slate-100 p-5 reveal">
-        <summary class="flex items-center justify-between gap-4 font-black"><span>أين يقع المركز؟</span><span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center"><i class="fa-solid fa-plus text-xs"></i></span></summary>
-        <p class="text-sm text-slate-500 leading-7 mt-4">طنطا — شارع البحر — برج الأطباء — الدور الثالث.</p>
+
+        <summary class="flex items-center justify-between gap-4 font-black">
+
+          <span>
+            أين يقع المركز؟
+          </span>
+
+          <span class="faq-icon w-8 h-8 rounded-full bg-cyan/10 text-cyan grid place-items-center">
+            <i class="fa-solid fa-plus text-xs"></i>
+          </span>
+
+        </summary>
+
+        <p class="text-sm text-slate-500 leading-7 mt-4">
+          طنطا — شارع البحر — برج الأطباء — الدور الثالث.
+        </p>
+
       </details>
+
     </div>
   </div>
 </section>
 
+
 <!-- BOOKING -->
 <section id="booking" class="py-24 bg-ink text-white relative overflow-hidden noise">
+
   <div class="absolute -right-32 -top-32 w-96 h-96 bg-cyan/15 rounded-full blur-3xl"></div>
+
   <div class="absolute -left-32 bottom-0 w-96 h-96 bg-aqua/10 rounded-full blur-3xl"></div>
+
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
     <div class="text-center max-w-2xl mx-auto reveal">
-      <span class="text-cyan font-black text-sm">احجز موعدك</span>
-      <h2 class="text-3xl sm:text-5xl font-black mt-3">جاهز تبدأ؟ خلينا نتكلم.</h2>
-      <p class="text-slate-400 mt-4 leading-7">املأ البيانات، واضغط تأكيد الحجز. سيتم فتح واتساب برسالة جاهزة.</p>
+
+      <span class="text-cyan font-black text-sm">
+        احجز موعدك
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-black mt-3">
+        جاهز تبدأ؟ خلينا نتكلم.
+      </h2>
+
+      <p class="text-slate-400 mt-4 leading-7">
+        املأ البيانات، واضغط تأكيد الحجز. سيتم فتح واتساب برسالة جاهزة.
+      </p>
+
     </div>
 
-    <form id="bookingForm" class="mt-12 bg-white/[.06] border border-white/10 rounded-[2rem] p-5 sm:p-8 backdrop-blur-xl reveal">
+
+    <form id="bookingForm"
+          class="mt-12 bg-white/[.06] border border-white/10 rounded-[2rem] p-5 sm:p-8 backdrop-blur-xl reveal">
+
       <div class="grid md:grid-cols-2 gap-5">
+
         <div>
-          <label for="patientName" class="block text-xs font-bold text-slate-300 mb-2">الاسم بالكامل</label>
-          <input id="patientName" required minlength="2" type="text" placeholder="مثال: أحمد محمد" class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
+          <label for="patientName"
+                 class="block text-xs font-bold text-slate-300 mb-2">
+            الاسم بالكامل
+          </label>
+
+          <input id="patientName"
+                 required
+                 minlength="2"
+                 type="text"
+                 placeholder="مثال: أحمد محمد"
+                 class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
         </div>
+
+
         <div>
-          <label for="patientPhone" class="block text-xs font-bold text-slate-300 mb-2">رقم الهاتف</label>
-          <input id="patientPhone" required type="tel" placeholder="01xxxxxxxxx" class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
+          <label for="patientPhone"
+                 class="block text-xs font-bold text-slate-300 mb-2">
+            رقم الهاتف
+          </label>
+
+          <input id="patientPhone"
+                 required
+                 type="tel"
+                 placeholder="01xxxxxxxxx"
+                 class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
         </div>
+
+
         <div>
-          <label for="patientService" class="block text-xs font-bold text-slate-300 mb-2">الخدمة المطلوبة</label>
-          <select id="patientService" required class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
-            <option>كشف واستشارة عامة</option>
-            <option>زراعة وتجميل الأسنان</option>
-            <option>تقويم الأسنان</option>
-            <option>تبييض الأسنان</option>
-            <option>علاج الجذور والأعصاب</option>
+
+          <label for="patientService"
+                 class="block text-xs font-bold text-slate-300 mb-2">
+            الخدمة المطلوبة
+          </label>
+
+          <select id="patientService"
+                  required
+                  class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
+            <option>
+              كشف واستشارة عامة
+            </option>
+
+            <option>
+              زراعة وتجميل الأسنان
+            </option>
+
+            <option>
+              تقويم الأسنان
+            </option>
+
+            <option>
+              تبييض الأسنان
+            </option>
+
+            <option>
+              علاج الجذور والأعصاب
+            </option>
+
           </select>
+
         </div>
+
+
         <div>
-          <label for="bookingDate" class="block text-xs font-bold text-slate-300 mb-2">اليوم المناسب</label>
-          <input id="bookingDate" required type="date" class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
+          <label for="bookingDate"
+                 class="block text-xs font-bold text-slate-300 mb-2">
+            اليوم المناسب
+          </label>
+
+          <input id="bookingDate"
+                 required
+                 type="date"
+                 class="w-full bg-white text-slate-900 rounded-xl px-4 py-3.5 outline-none focus:ring-4 focus:ring-cyan/20">
+
         </div>
+
       </div>
+
 
       <div class="mt-6 flex items-start gap-3 text-xs text-slate-400">
+
         <i class="fa-solid fa-lock text-cyan mt-0.5"></i>
-        <span>بياناتك تستخدم فقط لتجهيز طلب الحجز عبر واتساب.</span>
+
+        <span>
+          بياناتك تستخدم فقط لتجهيز طلب الحجز عبر واتساب.
+        </span>
+
       </div>
 
-      <button type="submit" class="btn mt-7 w-full bg-cyan hover:bg-cyan/90 text-ink rounded-2xl py-4 font-black text-base shadow-glow flex items-center justify-center gap-3">
+
+      <button type="submit"
+              class="btn mt-7 w-full bg-cyan hover:bg-cyan/90 text-ink rounded-2xl py-4 font-black text-base shadow-glow flex items-center justify-center gap-3">
+
         <i class="fa-brands fa-whatsapp text-xl"></i>
+
         تأكيد الحجز عبر واتساب
+
       </button>
+
     </form>
   </div>
 </section>
 
+
 <!-- CONTACT -->
 <section id="contact" class="py-24 bg-white">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="grid lg:grid-cols-2 gap-8">
+
       <div class="bg-slate-50 rounded-[2rem] p-7 sm:p-10 reveal">
-        <span class="text-cyan-700 font-black text-sm">تواصل معنا</span>
-        <h2 class="text-3xl sm:text-4xl font-black mt-3">الموقع ومواعيد العمل.</h2>
+
+        <span class="text-cyan-700 font-black text-sm">
+          تواصل معنا
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl font-black mt-3">
+          الموقع ومواعيد العمل.
+        </h2>
+
 
         <div class="space-y-5 mt-8">
-          <a href="tel:01229505700" class="flex gap-4 items-start group">
-            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm group-hover:bg-cyan group-hover:text-white transition"><i class="fa-solid fa-phone"></i></span>
-            <span><b class="block">الهاتف</b><span class="text-sm text-slate-500">01229505700</span></span>
+
+
+          <a href="tel:01229505700"
+             class="flex gap-4 items-start group">
+
+            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm group-hover:bg-cyan group-hover:text-white transition">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+
+            <span>
+              <b class="block">
+                الهاتف
+              </b>
+
+              <span class="text-sm text-slate-500">
+                01229505700
+              </span>
+            </span>
+
           </a>
-          <a href="https://wa.me/201229505700" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start group">
-            <span class="w-12 h-12 rounded-xl bg-white text-emerald-500 grid place-items-center shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition"><i class="fa-brands fa-whatsapp text-lg"></i></span>
-            <span><b class="block">واتساب</b><span class="text-sm text-slate-500">مراسلة مباشرة</span></span>
+
+
+          <a href="https://wa.me/201229505700"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="flex gap-4 items-start group">
+
+            <span class="w-12 h-12 rounded-xl bg-white text-emerald-500 grid place-items-center shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </span>
+
+            <span>
+
+              <b class="block">
+                واتساب
+              </b>
+
+              <span class="text-sm text-slate-500">
+                مراسلة مباشرة
+              </span>
+
+            </span>
+
           </a>
+
+
           <div class="flex gap-4 items-start">
-            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm"><i class="fa-solid fa-location-dot"></i></span>
-            <span><b class="block">العنوان</b><span class="text-sm text-slate-500">طنطا — شارع البحر — برج الأطباء — الدور الثالث</span></span>
+
+            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+
+            <span>
+
+              <b class="block">
+                العنوان
+              </b>
+
+              <span class="text-sm text-slate-500">
+                طنطا — شارع البحر — برج الأطباء — الدور الثالث
+              </span>
+
+            </span>
+
           </div>
+
+
           <div class="flex gap-4 items-start">
-            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm"><i class="fa-regular fa-clock"></i></span>
-            <span><b class="block">المواعيد</b><span class="text-sm text-slate-500">السبت — الخميس: 04:00 م — 10:00 م<br>الجمعة: إجازة</span></span>
+
+            <span class="w-12 h-12 rounded-xl bg-white text-cyan grid place-items-center shadow-sm">
+              <i class="fa-regular fa-clock"></i>
+            </span>
+
+            <span>
+
+              <b class="block">
+                المواعيد
+              </b>
+
+              <span class="text-sm text-slate-500">
+                السبت — الخميس: 04:00 م — 10:00 م
+                <br>
+                الجمعة: إجازة
+              </span>
+
+            </span>
+
           </div>
+
         </div>
       </div>
 
+
       <div class="h-[420px] rounded-[2rem] overflow-hidden shadow-luxe border border-slate-100 reveal reveal-delay-1">
-        <iframe title="خريطة موقع العيادة" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54874.83965682894!2d30.98292835!3d30.79166095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95b68270509%3A0xb3630f5b11296a84!2sTanta%2C%20Gharbia%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" class="w-full h-full border-0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe
+          title="خريطة موقع العيادة"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54874.83965682894!2d30.98292835!3d30.79166095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95b68270509%3A0xb3630f5b11296a84!2sTanta%2C%20Gharbia%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg"
+          class="w-full h-full border-0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
       </div>
+
     </div>
   </div>
 </section>
+
 </main>
+
 
 <!-- FOOTER -->
 <footer class="bg-ink text-slate-400 pt-14 pb-8">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+
+
       <div>
+
         <div class="flex items-center gap-3">
-          <div class="w-11 h-11 rounded-xl bg-cyan text-ink grid place-items-center"><i class="fa-solid fa-tooth"></i></div>
-          <div><b class="text-white block">د. أحمد مصطفى</b><span class="text-xs text-cyan">طب وتجميل الأسنان</span></div>
+
+          <div class="w-11 h-11 rounded-xl bg-cyan text-ink grid place-items-center">
+            <i class="fa-solid fa-tooth"></i>
+          </div>
+
+          <div>
+
+            <b class="text-white block">
+              د. أحمد مصطفى
+            </b>
+
+            <span class="text-xs text-cyan">
+              طب وتجميل الأسنان
+            </span>
+
+          </div>
+
         </div>
-        <p class="text-xs leading-6 mt-5 max-w-sm">رعاية متخصصة، تقنيات حديثة، وتجربة مريحة تبدأ من أول تواصل.</p>
+
+        <p class="text-xs leading-6 mt-5 max-w-sm">
+          رعاية متخصصة، تقنيات حديثة، وتجربة مريحة تبدأ من أول تواصل.
+        </p>
+
       </div>
+
+
       <div>
-        <h3 class="text-white font-black mb-4">روابط سريعة</h3>
+
+        <h3 class="text-white font-black mb-4">
+          روابط سريعة
+        </h3>
+
         <div class="grid grid-cols-2 gap-3 text-xs">
-          <a href="#about" class="hover:text-cyan transition">عن المركز</a>
-          <a href="#services" class="hover:text-cyan transition">الخدمات</a>
-          <a href="#results" class="hover:text-cyan transition">المعرض</a>
-          <a href="#faq" class="hover:text-cyan transition">الأسئلة</a>
+
+          <a href="#about" class="hover:text-cyan transition">
+            عن المركز
+          </a>
+
+          <a href="#services" class="hover:text-cyan transition">
+            الخدمات
+          </a>
+
+          <a href="#results" class="hover:text-cyan transition">
+            المعرض
+          </a>
+
+          <a href="#faq" class="hover:text-cyan transition">
+            الأسئلة
+          </a>
+
         </div>
+
       </div>
+
+
       <div>
-        <h3 class="text-white font-black mb-4">ابدأ الآن</h3>
-        <p class="text-xs leading-6 mb-4">احجز موعدك أو تواصل معنا مباشرة.</p>
-        <a href="#booking" class="inline-flex bg-white text-ink px-5 py-3 rounded-xl text-xs font-black">احجز موعدك</a>
+
+        <h3 class="text-white font-black mb-4">
+          ابدأ الآن
+        </h3>
+
+        <p class="text-xs leading-6 mb-4">
+          احجز موعدك أو تواصل معنا مباشرة.
+        </p>
+
+        <a href="#booking"
+           class="inline-flex bg-white text-ink px-5 py-3 rounded-xl text-xs font-black">
+          احجز موعدك
+        </a>
+
       </div>
+
     </div>
+
+
     <div class="pt-7 flex flex-col sm:flex-row gap-3 justify-between text-[11px]">
-      <span>© 2026 جميع الحقوق محفوظة — د. أحمد مصطفى</span>
-      <span>طنطا • طب وتجميل الأسنان</span>
+
+      <span>
+        © 2026 جميع الحقوق محفوظة — د. أحمد مصطفى
+      </span>
+
+      <span>
+        طنطا • طب وتجميل الأسنان
+      </span>
+
     </div>
+
   </div>
 </footer>
 
+
 <!-- FLOATING ACTIONS -->
 <div class="fixed bottom-5 left-5 z-50 flex flex-col gap-3">
-  <a href="https://wa.me/201229505700" target="_blank" rel="noopener noreferrer" aria-label="واتساب" class="pulse-ring w-14 h-14 rounded-full bg-emerald-500 text-white grid place-items-center shadow-xl hover:scale-105 transition">
+
+  <a href="https://wa.me/201229505700"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="واتساب"
+     class="pulse-ring w-14 h-14 rounded-full bg-emerald-500 text-white grid place-items-center shadow-xl hover:scale-105 transition">
+
     <i class="fa-brands fa-whatsapp text-3xl"></i>
+
   </a>
-  <a href="tel:01229505700" aria-label="اتصال" class="sm:hidden w-14 h-14 rounded-full bg-cyan text-ink grid place-items-center shadow-xl">
+
+
+  <a href="tel:01229505700"
+     aria-label="اتصال"
+     class="sm:hidden w-14 h-14 rounded-full bg-cyan text-ink grid place-items-center shadow-xl">
+
     <i class="fa-solid fa-phone"></i>
+
   </a>
+
 </div>
+
 
 <!-- GALLERY MODAL -->
-<div id="imageModal" class="modal fixed inset-0 z-[100] bg-ink/90 backdrop-blur-md p-4 grid place-items-center">
-  <button id="closeModal" aria-label="إغلاق" class="absolute top-5 left-5 w-12 h-12 rounded-full bg-white/10 text-white border border-white/10"><i class="fa-solid fa-xmark"></i></button>
-  <img id="modalImage" src="" alt="صورة مكبرة" class="max-w-5xl max-h-[85vh] rounded-2xl shadow-2xl">
+<div id="imageModal"
+     class="modal fixed inset-0 z-[100] bg-ink/90 backdrop-blur-md p-4 grid place-items-center">
+
+  <button id="closeModal"
+          aria-label="إغلاق"
+          class="absolute top-5 left-5 w-12 h-12 rounded-full bg-white/10 text-white border border-white/10">
+
+    <i class="fa-solid fa-xmark"></i>
+
+  </button>
+
+  <img id="modalImage"
+       src=""
+       alt="صورة مكبرة"
+       class="max-w-5xl max-h-[85vh] rounded-2xl shadow-2xl">
+
 </div>
+
 
 <!-- TOAST -->
-<div id="toast" class="toast fixed bottom-5 right-5 z-[110] bg-ink text-white rounded-2xl px-5 py-4 shadow-2xl border border-white/10 flex items-center gap-3 max-w-sm">
-  <span class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 grid place-items-center"><i class="fa-solid fa-check"></i></span>
-  <span id="toastText" class="text-xs font-bold">تم تجهيز الحجز.</span>
+<div id="toast"
+     class="toast fixed bottom-5 right-5 z-[110] bg-ink text-white rounded-2xl px-5 py-4 shadow-2xl border border-white/10 flex items-center gap-3 max-w-sm">
+
+  <span class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 grid place-items-center">
+    <i class="fa-solid fa-check"></i>
+  </span>
+
+  <span id="toastText" class="text-xs font-bold">
+    تم تجهيز الحجز.
+  </span>
+
 </div>
 
+
 <script>
+
 /* ========= Core helpers ========= */
+
 const $ = (selector, root=document) => root.querySelector(selector);
+
 const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
 
+
 /* ========= Navbar + mobile menu ========= */
+
 const navbar = $("#navbar");
+
 const menuBtn = $("#menuBtn");
+
 const mobileMenu = $("#mobileMenu");
 
+
 window.addEventListener("scroll", () => {
-  navbar.classList.toggle("nav-scrolled", window.scrollY > 20);
-  const max = document.documentElement.scrollHeight - innerHeight;
-  $("#progress").style.width = max > 0 ? `${(scrollY/max)*100}%` : "0%";
+
+  navbar.classList.toggle(
+    "nav-scrolled",
+    window.scrollY > 20
+  );
+
+  const max =
+    document.documentElement.scrollHeight - innerHeight;
+
+  $("#progress").style.width =
+    max > 0
+      ? `${(scrollY/max)*100}%`
+      : "0%";
+
 },{passive:true});
 
+
 menuBtn.addEventListener("click", () => {
+
   mobileMenu.classList.toggle("hidden");
-  const icon = menuBtn.querySelector("i");
-  icon.className = mobileMenu.classList.contains("hidden") ? "fa-solid fa-bars" : "fa-solid fa-xmark";
+
+  const icon =
+    menuBtn.querySelector("i");
+
+  icon.className =
+    mobileMenu.classList.contains("hidden")
+      ? "fa-solid fa-bars"
+      : "fa-solid fa-xmark";
+
 });
-$$('#mobileMenu a').forEach(a => a.addEventListener("click",()=>mobileMenu.classList.add("hidden")));
+
+
+$$('#mobileMenu a')
+  .forEach(a =>
+    a.addEventListener(
+      "click",
+      () => mobileMenu.classList.add("hidden")
+    )
+  );
+
 
 /* ========= Reveal animations ========= */
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
-      observer.unobserve(entry.target);
-    }
-  });
-},{threshold:.12});
-$$(".reveal").forEach(el=>observer.observe(el));
+
+const observer =
+  new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+
+        entry.target.classList.add("show");
+
+        observer.unobserve(entry.target);
+
+      }
+
+    });
+
+  },{threshold:.12});
+
+
+$$(".reveal")
+  .forEach(el =>
+    observer.observe(el)
+  );
+
 
 /* ========= Minimum booking date ========= */
+
 const dateInput = $("#bookingDate");
+
 const now = new Date();
-dateInput.min = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
+
+dateInput.min =
+  `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
+
 
 /* ========= WhatsApp booking ========= */
+
 const form = $("#bookingForm");
-form.addEventListener("submit", event=>{
+
+
+form.addEventListener("submit", event => {
+
   event.preventDefault();
 
-  const name = $("#patientName").value.trim();
-  const phone = $("#patientPhone").value.trim();
-  const service = $("#patientService").value;
-  const date = $("#bookingDate").value;
+
+  const name =
+    $("#patientName").value.trim();
+
+  const phone =
+    $("#patientPhone").value.trim();
+
+  const service =
+    $("#patientService").value;
+
+  const date =
+    $("#bookingDate").value;
+
 
   if(name.length < 2){
-    showToast("من فضلك اكتب الاسم بالكامل.");
+
+    showToast(
+      "من فضلك اكتب الاسم بالكامل."
+    );
+
     return;
   }
 
-  const digits = phone.replace(/\D/g,"");
+
+  const digits =
+    phone.replace(/\D/g,"");
+
+
   if(digits.length < 10){
-    showToast("من فضلك اكتب رقم هاتف صحيح.");
+
+    showToast(
+      "من فضلك اكتب رقم هاتف صحيح."
+    );
+
     return;
   }
+
 
   if(!date){
-    showToast("من فضلك اختر اليوم المناسب.");
+
+    showToast(
+      "من فضلك اختر اليوم المناسب."
+    );
+
     return;
   }
+
 
   const message =
 `مرحباً دكتور أحمد، أود حجز موعد في العيادة:
@@ -710,59 +2027,194 @@ form.addEventListener("submit", event=>{
 الخدمة المطلوبة: ${service}
 اليوم المناسب: ${date}`;
 
-  const url = "https://wa.me/201229505700?text=" + encodeURIComponent(message);
-  showToast("تم تجهيز رسالة الحجز، سيتم فتح واتساب.");
-  setTimeout(()=>window.open(url,"_blank","noopener,noreferrer"),450);
+
+  const url =
+    "https://wa.me/201229505700?text=" +
+    encodeURIComponent(message);
+
+
+  showToast(
+    "تم تجهيز رسالة الحجز، سيتم فتح واتساب."
+  );
+
+
+  setTimeout(
+    () =>
+      window.open(
+        url,
+        "_blank",
+        "noopener,noreferrer"
+      ),
+    450
+  );
+
 });
+
 
 /* ========= Toast ========= */
+
 let toastTimer;
+
+
 function showToast(text){
-  $("#toastText").textContent = text;
-  $("#toast").classList.add("active");
+
+  $("#toastText").textContent =
+    text;
+
+  $("#toast").classList.add(
+    "active"
+  );
+
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(()=>$("#toast").classList.remove("active"),3500);
+
+  toastTimer =
+    setTimeout(
+      () =>
+        $("#toast").classList.remove("active"),
+      3500
+    );
+
 }
+
 
 /* ========= Gallery lightbox ========= */
-const modal = $("#imageModal");
-const modalImage = $("#modalImage");
-$$(".gallery-item").forEach(item=>{
-  item.addEventListener("click",()=>{
-    modalImage.src = item.dataset.image;
-    modal.classList.add("active");
-    document.body.style.overflow="hidden";
+
+const modal =
+  $("#imageModal");
+
+const modalImage =
+  $("#modalImage");
+
+
+$$(".gallery-item")
+  .forEach(item => {
+
+    item.addEventListener("click", () => {
+
+      modalImage.src =
+        item.dataset.image;
+
+      modal.classList.add(
+        "active"
+      );
+
+      document.body.style.overflow =
+        "hidden";
+
+    });
+
   });
-});
+
+
 function closeGallery(){
-  modal.classList.remove("active");
-  document.body.style.overflow="";
-  setTimeout(()=>modalImage.src="",300);
+
+  modal.classList.remove(
+    "active"
+  );
+
+  document.body.style.overflow =
+    "";
+
+  setTimeout(
+    () =>
+      modalImage.src = "",
+    300
+  );
+
 }
-$("#closeModal").addEventListener("click",closeGallery);
-modal.addEventListener("click",e=>{if(e.target===modal)closeGallery()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeGallery()});
+
+
+$("#closeModal")
+  .addEventListener(
+    "click",
+    closeGallery
+  );
+
+
+modal.addEventListener(
+  "click",
+  e => {
+
+    if(e.target === modal)
+      closeGallery();
+
+  }
+);
+
+
+document.addEventListener(
+  "keydown",
+  e => {
+
+    if(e.key === "Escape")
+      closeGallery();
+
+  }
+);
+
 
 /* ========= Active navigation ========= */
-const sections = $$("main section[id]");
-const navLinks = $$(".nav-link");
-const navObserver = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      navLinks.forEach(link=>{
-        link.classList.toggle("text-cyan-600",link.getAttribute("href")===`#${entry.target.id}`);
+
+const sections =
+  $$("main section[id]");
+
+const navLinks =
+  $$(".nav-link");
+
+
+const navObserver =
+  new IntersectionObserver(
+    entries => {
+
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+          navLinks.forEach(link => {
+
+            link.classList.toggle(
+              "text-cyan-600",
+              link.getAttribute("href") ===
+              `#${entry.target.id}`
+            );
+
+          });
+
+        }
+
       });
+
+    },
+    {
+      rootMargin:"-35% 0px -55% 0px"
     }
-  });
-},{rootMargin:"-35% 0px -55% 0px"});
-sections.forEach(section=>navObserver.observe(section));
+  );
+
+
+sections.forEach(
+  section =>
+    navObserver.observe(section)
+);
+
 
 /* ========= Image fallback ========= */
-$$("img").forEach(img=>{
-  img.addEventListener("error",()=>{
-    img.style.opacity=".25";
-  },{once:true});
+
+$$("img").forEach(img => {
+
+  img.addEventListener(
+    "error",
+    () => {
+
+      img.style.opacity =
+        ".25";
+
+    },
+    {once:true}
+  );
+
 });
+
 </script>
+
 </body>
 </html>
